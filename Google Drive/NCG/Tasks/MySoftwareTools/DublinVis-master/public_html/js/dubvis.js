@@ -13,7 +13,7 @@ var headerSize = 100;
 
 var lng = [-8.7237, -8.7237, -8.7237]; //west, centre, east
 var lat = [54.7211, 54.7211, 54.7211]; //north, centre, south
-
+let cx, cy; 
 var ww = 1024;
 var hh = 512;
 
@@ -25,6 +25,8 @@ var divideBy = 1; //portion of file to use, given as divisor
 var spots = [];
 //weather data
 let xml;
+let symbolsDay = []; //images for weather symbols
+let symbol;
 
 function preload() {
 
@@ -50,16 +52,26 @@ function preload() {
     }
 
     xml = loadXML("weather.xml");
+//    symbolsDay = loadWeatherSymbols("day");
+symbol = loadImage("public_html/images/WDB_symbols/day/01.png");
 
     //console.log(sourceData);
 }
+
+//function loadWeatherSymbols(tod_){
+//    return loadImage("../images/WDB_symbols/day/01.png");
+//    
+//}
 
 function  setup() {
     canvasMap = createCanvas(1024, 512);
     canvasMap.position(0, 0);
     canvasMap.translate(width / 2, height / 2);
     imageMode(CENTER);
-    canvasMap.image(mapimg, 0, 0);
+//    canvasMap.image(symbol, width/2, height/2);
+    cx = mercX(lng[1]);
+    cy = mercY(lat[1]);
+
 //    timeSlider = createSlider(0, 5, prevTime);
 //    timeSlider.position(0, 10 + canvas.height);
 //    timeSlider.size(1024, 36);
@@ -98,7 +110,7 @@ function  setup() {
             let s = loc.getChild("symbol");
             desc = s.getString("id");
             symbolNo = s.getString("number");
-            println("precip: " + precip + " mm \t "+desc+" symbol #"+symbolNo);
+            println("precip: " + precip + " mm \t " + desc + " symbol #" + symbolNo);
         }
     }
 
@@ -107,8 +119,7 @@ function  setup() {
 //stroke(5);
 // rectMode(CORNER);
 // rect(,0,width,height);
-    var cx = mercX(lng[1]);
-    var cy = mercY(lat[1]);
+
 //var centre = new PVector(cx, cy);
 
     if (sourceData != null) {
@@ -165,8 +176,15 @@ function  setup() {
 }
 
 function draw() {
-    translate(width / 2, height / 2)
+    push();
+    translate(width / 2, height / 2);
     image(mapimg, 0, 0);
+    pop();
+    image(symbol, width/2, height/2);
+   // fill(255,125);
+    //ellipse(width/2, height/2, 50,50);
+//    canvasMap.image(symbolsDay[0], width/2, height/2);
+    //noFill();
 //    var t = timeSlider.value();
     //only update on change
 //    if (t != prevTime) {
@@ -175,6 +193,8 @@ function draw() {
 //    }
 //    showMonth(2013, t);
 }
+
+
 
 function mercX(lon) {
     lon = radians(lon);
