@@ -14,15 +14,23 @@ and open the template in the editor.
 
         <link rel="stylesheet" href="public_html/css/normalize.min.css">
         <link rel="stylesheet" href="public_html/css/main.css">
+        <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
         <!--P5 libraries-->
-       
+
         <script src="public_html/libraries/p5.js" type="text/javascript"></script>
         <script src="public_html/libraries/p5.dom.js" type="text/javascript"></script>
-         <script src="public_html/js/dubvis.js" type="text/javascript"></script>
-        <script src="public_html/js/loadXML.js" type="text/javascript"></script>
+        <script src="public_html/js/dubvis.js" type="text/javascript"></script>
+        <!--<script src="public_html/js/loadXML.js" type="text/javascript"></script>-->
         <style> body {padding: 0; margin: 0;} canvas {vertical-align: top;} </style>
     </head>
-    <body>
-        <!--<img src="public_html/images/WDB_symbols/day/01.png" alt=""/>-->
+    <body><div id="xmlDataLocal"> 
+            <a href="http://metwdb-prod.ichec.ie/metno-wdb2ts/locationforecast?lat=54.7210798611;long=-8.7237392806">Data Example</a>   
+            <a href="http://metwdb-prod.ichec.ie/metno-wdb2ts/locationforecast?lat=51.8969;long=-8.4863">Data Cork</a>   
+
+        </div>
+        <div id="canvasDiv" style="padding:0vh 1vw 0vh 1vw;"></div>
+        <div id="weatherText" style="padding:0vh 1vw 0vh 1vw;"></div>
+<div id="weatherImage" style="padding:0vh 1vw 0vh 1vw;"></div>
+
     </body>
 </html>

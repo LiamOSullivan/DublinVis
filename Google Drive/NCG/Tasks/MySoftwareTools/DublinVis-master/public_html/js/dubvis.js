@@ -1,190 +1,180 @@
-/*************************
- 
- *************************/
 
-var APIToken = "pk.eyJ1IjoibGlhbW9zdWxsaXZhbiIsImEiOiJjajNkYjhyZnAwMDAyMzNsN2FyZnY3cWQzIn0.c1qL12vFZfc2weViolmnTw";
-var canvasMap, canvasBar;
-var mapimg;
+let map_APIToken = "pk.eyJ1IjoibGlhbW9zdWxsaXZhbiIsImEiOiJjajNkYjhyZnAwMDAyMzNsN2FyZnY3cWQzIn0.c1qL12vFZfc2weViolmnTw";
+let canvasMap, canvasBar;
+let mapImg;
 
 var headerSize = 100;
 
-//var clat = 0;
-//var clon = 0;
+let cork_lng = [-8.4863, -8.4863, -8.4863]; //west, centre, east
+let cork_lat = [51.8969, 51.8969, 51.8969]; //north, centre, south
+let cx, cy;
+let ww = 400;
+let hh = 200;
 
-var lng = [-8.7237, -8.7237, -8.7237]; //west, centre, east
-var lat = [54.7211, 54.7211, 54.7211]; //north, centre, south
-let cx, cy; 
-var ww = 1024;
-var hh = 512;
-
-var prevTime = 0;
-var zoom = 9; //min 10 - max 20
-var sourceData = [];
-var sourceLink = "https://data.dublinked.ie/dataset/b1a0ce0a-bfd4-4d0b-b787-69a519c61672/resource/5552e43c-ba3c-4a24-ad1d-dea301f21af5/download/walk-dublin-where-am-i-data-samplep20130415-1512.csv";
-var divideBy = 1; //portion of file to use, given as divisor 
-var spots = [];
+let prevTime = 0;
+let zoom = 8; //min 10 - max 20
+let sourceData = [];
+let sourceLink = "http://metwdb-prod.ichec.ie/metno-wdb2ts/locationforecast?lat=54.7210798611;long=-8.7237392806";
+let divideBy = 1; //portion of file to use, given as divisor 
+let spots = [];
 //weather data
-let xml;
+let xmlWeather;
+let symbolsWeather = [];
 let symbolsDay = []; //images for weather symbols
-let symbol;
+let symbol, symbol1;
+
+//Parsing weather data///////////////////////////////////
+//Momemt: temp, pressure, wind direction, wind speed, wind Beaufort humidity
+let t, press, windD, windS, windB, hum;
+//Time span: precipitation, 
+let precip, symbolNo, desc;
 
 function preload() {
-
 //Get Map
-    var url = "https://api.mapbox.com/styles/v1/mapbox/dark-v9/static/" +
-            lng[1] + "," + lat[1] + "," + zoom + "/" +
+    let map_url = "https://api.mapbox.com/styles/v1/mapbox/dark-v9/static/" +
+            cork_lng[1] + "," + cork_lat[1] + "," + zoom + "/" +
             ww + "x" + hh +
-            "?access_token=" + APIToken;
-    mapimg = loadImage(url, "jpg");
-    println(url);
+            "?access_token=" + map_APIToken;
 
-//Get data
-    //sourceData = loadStrings(sourceLink);
-    if (fileExists(sourceLink)) //this has slowed load down a lot
-    {
-        println("Found file on database");
-        sourceData = loadStrings(sourceLink);
-        //TODO: save as cached version
-    } else
-    {
-        println("ERROR: File not found on database --- opening cached version");
-        sourceData = loadStrings("cache.csv");
+    println("Map URL: " + map_url);
+
+    if (fileExists(map_url)) {
+        println("Online map found");
+        mapImg = loadImage(map_url, "png");
+    } else {
+        println("Online map not found");
+        mapImg = loadImage("oops1", "jpg");
+    }
+    if (mapImg !== null) {
+        println("Map loaded");
     }
 
-    xml = loadXML("weather.xml");
-//    symbolsDay = loadWeatherSymbols("day");
-symbol = loadImage("public_html/images/WDB_symbols/day/01.png");
-
-    //console.log(sourceData);
+//Get weather  data
+  xmlWeather = loadXML("locationforecast.xml");
 }
 
-//function loadWeatherSymbols(tod_){
-//    return loadImage("../images/WDB_symbols/day/01.png");
-//    
-//}
-
 function  setup() {
-    canvasMap = createCanvas(1024, 512);
-    canvasMap.position(0, 0);
-    canvasMap.translate(width / 2, height / 2);
-    imageMode(CENTER);
-//    canvasMap.image(symbol, width/2, height/2);
-    cx = mercX(lng[1]);
-    cy = mercY(lat[1]);
-
+    canvasMap = createCanvas(ww, hh);
+    canvasMap.parent("canvasDiv");
+//    canvasMap.translate(width / 2, height / 2);
+    ellipseMode(CENTER);
+    rectMode(CENTER);
+//    canvasMap.image(mapImg, 0, 0);
+    cx = mercX(cork_lng[1]);
+    cy = mercY(cork_lat[1]);
+    println("cork_lng: " + cork_lng[1] + " => cx: " + cx + "\tcork_lat: " + cork_lat + " => cy: " + cy);
 //    timeSlider = createSlider(0, 5, prevTime);
 //    timeSlider.position(0, 10 + canvas.height);
 //    timeSlider.size(1024, 36);
 
-//    var children = xml.getChildren("time");
-//    println("*** "+xml.getAttributeCount());
-//    println("*** "+xml.listChildren());
-
-
-//Parsing weather data///////////////////////////////////
-//Momemt: temp, pressure, wind direction, wind speed, humidity
-    let t, p, windD, windS, hum;
-    //Time span: precipitation, 
-    let precip, symbolNo, desc;
-
-    let prod = xml.getChild("product");
+//    var children = xmlWeather.getChildren("time");
+//    println("*** "+xmlWeather.getAttributeCount());
+//    println("*** "+xmlWeather.listChildren());
+    let prod = xmlWeather.getChild("product");
     let times = prod.getChildren();
 
-    for (let i = 0; i < times.length; i++) {
+    //Harmonie data is outputted in 1 hour intervals 
+    for (let i = 0; i < 2; i++) {
         let startTime = times[i].getString("from");
         let endTime = times[i].getString("to");
-//    var coloring = children[i].getString("species");
-//    var name = children[i].getContent();
-        println("Weather forecast #" + i + " | startTime: " + startTime + ", end time: " + endTime);
+//        println("Weather forecast #" + i + " | startTime: " + startTime + ", end time: " + endTime);
         let loc = times[i].getChild("location");
-        println("list: " + loc.listChildren());
+//        println("list: " + loc.listChildren());
 
         //There are 2 types of location data, spanning an hour or at a given time
         if (loc.getChild("temperature") != null) {
-            let c = loc.getChild("temperature");
-            t = c.getString("value");
-            println("T: " + t + " deg C");
+            let temp = loc.getChild("temperature");
+            t = temp.getString("value");
+            temp = loc.getChild("pressure");
+            press = temp.getString("value");
+            temp = loc.getChild("windSpeed");
+            windS = temp.getString("mps");
+            windB = temp.getString("beaufort");
+            temp = loc.getChild("windDirection");
+            windD = temp.getString("name");
+            temp = loc.getChild("humidity");
+            hum = temp.getString("value");
+
         } else if (loc.getChild("precipitation") != null) {
-            let p = loc.getChild("precipitation");
-            precip = p.getString("value");
+            let temp = loc.getChild("precipitation");
+            precip = temp.getString("value");
             let s = loc.getChild("symbol");
             desc = s.getString("id");
             symbolNo = s.getString("number");
             println("precip: " + precip + " mm \t " + desc + " symbol #" + symbolNo);
         }
+
     }
+    document.getElementById("weatherText").innerHTML =
+            "<strong>Temperature</strong> : " + t + " C<br>"
+            + "<strong>Precipitation</strong> : " + precip + " mm <br>"
+            + "<strong>Wind: Speed</strong> : " + windS + " mps" + "\t Beaufort Scale: " + windB + "<br>"
+            + "<strong>Wind Direction</strong> : " + windD + "<br>"
+            + "<strong>Pressure</strong> : " + press + " hPa";
+    
+    
+    document.getElementById("weatherImage").innerHTML = 
+            "<img src=\""+"public_html/images/Met50v2/0"+symbolNo+"d.png"+"\"></img>";
 
 
-
-//stroke(5);
-// rectMode(CORNER);
-// rect(,0,width,height);
-
-//var centre = new PVector(cx, cy);
-
-    if (sourceData != null) {
-        //spots=new Spot[sourceData.length-1]; //ignore first line
-        for (var i = 1; i < floor(sourceData.length / divideBy); i += 1) {
-            var cells = sourceData[i].split("/");
-            var lt = float(cells[2]);
-            var lg = float(cells[3]);
-
-            var yr, m, d;
-            for (var j = 0; j < cells.length; j += 1) {
-                var date = cells[0].split("-");
-                //print("Date has n = "+date.length+"\t");
-                //for (var k=0; k<date.length; k+=1) {
-                //  print("Date "+k+": "+date[k]);
-                //}
-                yr = int(date[0]);
-                m = int(date[1]);
-                d = int(date[2]);
-                //print("\tYear: "+year+"\tMonth: "+month+"\tDay: "+day+"\t");
-                //print("\tLong: "+lng+"\tLat: "+lat);
-
-            }
-            spots[i] = {
-                id: i,
-                string: sourceData[i],
-                lat: lt,
-                long: lg,
-                x: mercX(lg) - cx,
-                y: mercY(lt) - cy,
-                year: yr,
-                month: m,
-                day: d,
-                show: function () {
-                    noStroke();
-                    fill(109, 153, 224, 100);
-                    ellipse(this.x, this.y, 10, 10);
-                }
-            }
+//    if (sourceData != null) {
+//        //spots=new Spot[sourceData.length-1]; //ignore first line
+//        for (var i = 1; i < floor(sourceData.length / divideBy); i += 1) {
+//            let cells = sourceData[i].split("/");
+//            let lt = float(cells[2]);
+//            let lg = float(cells[3]);
+//
+//            let yr, m, d;
+//            for (let j = 0; j < cells.length; j += 1) {
+//                let date = cells[0].split("-");
+//                //print("Date has n = "+date.length+"\t");
+//                //for (var k=0; k<date.length; k+=1) {
+//                //  print("Date "+k+": "+date[k]);
+//                //}
+//                yr = int(date[0]);
+//                m = int(date[1]);
+//                d = int(date[2]);
+//                //print("\tYear: "+year+"\tMonth: "+month+"\tDay: "+day+"\t");
+//                //print("\tLong: "+cork_lng+"\tLat: "+cork_lat);
+//
+//            }
+//            spots[i] = {
+//                id: i,
+//                string: sourceData[i],
+//                cork_lat: lt,
+//                long: lg,
+//                x: mercX(lg) - cx,
+//                y: mercY(lt) - cy,
+//                year: yr,
+//                month: m,
+//                day: d,
+//                show: function () {
+//                    noStroke();
+//                    fill(109, 153, 224, 100);
+//                    ellipse(this.x, this.y, 10, 10);
+//                }
+//            };
             //spots[i].show();
             //console.log("| Spot #"+spots[i].id+"\t" +spots[i].string);
-            // console.log("| Spot #"+spots[i].id+"\t" +spots[i].lat+"\t" 
+            // console.log("| Spot #"+spots[i].id+"\t" +spots[i].cork_lat+"\t" 
             // 	+spots[i].long+"\t" +spots[i].x+"\t" +spots[i].y+"\t"
             // +spots[i].year+"\t" +spots[i].month+"\t"+spots[i].day);
 
-        }
-
-    } else {
-        println("ERROR! No data file found.");
-    }
+//        }
+//
+//    } else {
+//        println("ERROR! No data file found.");
+//    }
 //console.log("No of occurances in 2013 was "+showYear(2013));
 //console.log("No of occurances in 03/2013 was "+showMonth(2013, 3));
 //console.log("No of occurances on 01/03/2013 was "+showDay(2013, 3, 1));
 }
 
 function draw() {
-    push();
-    translate(width / 2, height / 2);
-    image(mapimg, 0, 0);
-    pop();
-    image(symbol, width/2, height/2);
-   // fill(255,125);
-    //ellipse(width/2, height/2, 50,50);
-//    canvasMap.image(symbolsDay[0], width/2, height/2);
-    //noFill();
+    image(mapImg, 0, 0);
+    fill(255, 125);
+    ellipse(width / 2, height / 2, 25, 25);
+    noFill();
 //    var t = timeSlider.value();
     //only update on change
 //    if (t != prevTime) {
@@ -194,8 +184,6 @@ function draw() {
 //    showMonth(2013, t);
 }
 
-
-
 function mercX(lon) {
     lon = radians(lon);
     var a = (256 / PI) * pow(2, zoom);
@@ -203,18 +191,18 @@ function mercX(lon) {
     return a * b;
 }
 
-function mercY(lat) {
-    lat = radians(lat);
+function mercY(cork_lat) {
+    cork_lat = radians(cork_lat);
     var a = (256 / PI) * pow(2, zoom);
-    var b = tan(PI / 4 + lat / 2);
+    var b = tan(PI / 4 + cork_lat / 2);
     var c = PI - log(b);
     return a * c;
 }
 
-function fileExists(url) {
-    if (url) {
+function fileExists(map_url) {
+    if (map_url) {
         var req = new XMLHttpRequest();
-        req.open('GET', url, false);
+        req.open('GET', map_url, false);
         req.send();
         return req.status == 200;
     } else {
