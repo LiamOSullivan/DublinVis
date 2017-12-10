@@ -5,6 +5,7 @@ let mapImg;
 
 var headerSize = 100;
 
+
 let cork_lng = [-8.4863, -8.4863, -8.4863]; //west, centre, east
 let cork_lat = [51.8969, 51.8969, 51.8969]; //north, centre, south
 let cx, cy;
@@ -18,10 +19,12 @@ let sourceLink = "http://metwdb-prod.ichec.ie/metno-wdb2ts/locationforecast?lat=
 let divideBy = 1; //portion of file to use, given as divisor 
 let spots = [];
 //weather data
+let startDate, startTime, endTime;
 let xmlWeather;
 let symbolsWeather = [];
 let symbolsDay = []; //images for weather symbols
-let symbol, symbol1;
+let symbol;
+let tod = 'd'; //time of day: day or night
 
 //Parsing weather data///////////////////////////////////
 //Momemt: temp, pressure, wind direction, wind speed, wind Beaufort humidity
@@ -29,9 +32,23 @@ let t, press, windD, windS, windB, hum;
 //Time span: precipitation, 
 let precip, symbolNo, desc;
 
+let forecast = {
+    time: -1,
+    temp: -99,
+    pressure: -1,
+    windDirection: -1,
+    windSpeed: -1,
+    windBeaufort: -1,
+    humidity: -1,
+    precip: -1,
+    symbolNo: -1,
+    description: -1
+};
+ let forecasts = [];
+
 function preload() {
 //Get Map
-    let map_url = "https://api.mapbox.com/styles/v1/mapbox/dark-v9/static/" +
+    let map_url = "https://api.mapbox.com/styles/v1/mapbox/basic-v9/static/" +
             cork_lng[1] + "," + cork_lat[1] + "," + zoom + "/" +
             ww + "x" + hh +
             "?access_token=" + map_APIToken;
@@ -50,8 +67,8 @@ function preload() {
     }
 
 //Get weather  data
-  xmlWeather = loadXML("locationforecast.xml");
-}
+    xmlWeather = loadXML("locationforecast.xml");
+}   
 
 function  setup() {
     canvasMap = createCanvas(ww, hh);
@@ -75,8 +92,26 @@ function  setup() {
 
     //Harmonie data is outputted in 1 hour intervals 
     for (let i = 0; i < 2; i++) {
-        let startTime = times[i].getString("from");
-        let endTime = times[i].getString("to");
+        if ((i + 1) % 2 === 0) {
+            let start = times[i].getString("from");
+            let splt = start.split('T');
+            startDate = splt[0];
+            startTime = splt[1].substring(0, 5);
+            let hour = parseInt(startTime.substring(0, 2));
+            
+            //decide if night or day based on hour
+            if(hour>17 || hour<6){
+                tod = 'n';                
+            }
+            else{
+                tod = 'd';
+           
+            }
+      
+        }
+        
+//        
+//        if(startTime)
 //        println("Weather forecast #" + i + " | startTime: " + startTime + ", end time: " + endTime);
         let loc = times[i].getChild("location");
 //        println("list: " + loc.listChildren());
@@ -101,20 +136,26 @@ function  setup() {
             let s = loc.getChild("symbol");
             desc = s.getString("id");
             symbolNo = s.getString("number");
+            let sn = parseInt(symbolNo);
+            if(sn<10){
+                symbolNo = "0"+symbolNo;
+            }
             println("precip: " + precip + " mm \t " + desc + " symbol #" + symbolNo);
         }
 
     }
     document.getElementById("weatherText").innerHTML =
-            "<strong>Temperature</strong> : " + t + " C<br>"
+            "<h2>Weather for today : " + startDate + " </h2>"
+            + "<h3>Time : " + startTime + " </h3>"
+            + "<strong>Temperature</strong> : " + t + " C<br>"
             + "<strong>Precipitation</strong> : " + precip + " mm <br>"
             + "<strong>Wind: Speed</strong> : " + windS + " mps" + "\t Beaufort Scale: " + windB + "<br>"
             + "<strong>Wind Direction</strong> : " + windD + "<br>"
             + "<strong>Pressure</strong> : " + press + " hPa";
-    
-    
-    document.getElementById("weatherImage").innerHTML = 
-            "<img src=\""+"public_html/images/Met50v2/0"+symbolNo+"d.png"+"\"></img>";
+
+
+    document.getElementById("weatherImage").innerHTML =
+            "<img src=\"" + "public_html/images/Met50v2/" + symbolNo+tod+ ".png" + "\"></img>";
 
 
 //    if (sourceData != null) {
@@ -154,11 +195,11 @@ function  setup() {
 //                    ellipse(this.x, this.y, 10, 10);
 //                }
 //            };
-            //spots[i].show();
-            //console.log("| Spot #"+spots[i].id+"\t" +spots[i].string);
-            // console.log("| Spot #"+spots[i].id+"\t" +spots[i].cork_lat+"\t" 
-            // 	+spots[i].long+"\t" +spots[i].x+"\t" +spots[i].y+"\t"
-            // +spots[i].year+"\t" +spots[i].month+"\t"+spots[i].day);
+    //spots[i].show();
+    //console.log("| Spot #"+spots[i].id+"\t" +spots[i].string);
+    // console.log("| Spot #"+spots[i].id+"\t" +spots[i].cork_lat+"\t" 
+    // 	+spots[i].long+"\t" +spots[i].x+"\t" +spots[i].y+"\t"
+    // +spots[i].year+"\t" +spots[i].month+"\t"+spots[i].day);
 
 //        }
 //
