@@ -19,7 +19,7 @@ let sourceLink = "http://metwdb-prod.ichec.ie/metno-wdb2ts/locationforecast?lat=
 let divideBy = 1; //portion of file to use, given as divisor 
 let spots = [];
 //weather data
-let startDate, startTime, endTime;
+let displayDate, displayTime, startTime, endTime;
 let xmlWeather;
 let symbolsWeather = [];
 let symbolsDay = []; //images for weather symbols
@@ -31,20 +31,20 @@ let tod = 'd'; //time of day: day or night
 let t, press, windD, windS, windB, hum;
 //Time span: precipitation, 
 let precip, symbolNo, desc;
-
-let forecast = {
-    time: -1,
-    temp: -99,
-    pressure: -1,
-    windDirection: -1,
-    windSpeed: -1,
-    windBeaufort: -1,
-    humidity: -1,
-    precip: -1,
-    symbolNo: -1,
-    description: -1
-};
- let forecasts = [];
+//
+//let forecast = {
+//    time: -1,
+//    temp: -99,
+//    pressure: -1,
+//    windDirection: -1,
+//    windSpeed: -1,
+//    windBeaufort: -1,
+//    humidity: -1,
+//    precip: -1,
+//    symbolNo: -1,
+//    description: -1
+//};
+let forecasts = [];
 
 function preload() {
 //Get Map
@@ -53,22 +53,22 @@ function preload() {
             ww + "x" + hh +
             "?access_token=" + map_APIToken;
 
-    println("Map URL: " + map_url);
+//    println("Map URL: " + map_url);
 
     if (fileExists(map_url)) {
-        println("Online map found");
+//        println("Online map found");
         mapImg = loadImage(map_url, "png");
     } else {
         println("Online map not found");
         mapImg = loadImage("oops1", "jpg");
     }
     if (mapImg !== null) {
-        println("Map loaded");
+//        println("Map loaded");
     }
 
 //Get weather  data
     xmlWeather = loadXML("locationforecast.xml");
-}   
+}
 
 function  setup() {
     canvasMap = createCanvas(ww, hh);
@@ -79,7 +79,7 @@ function  setup() {
 //    canvasMap.image(mapImg, 0, 0);
     cx = mercX(cork_lng[1]);
     cy = mercY(cork_lat[1]);
-    println("cork_lng: " + cork_lng[1] + " => cx: " + cx + "\tcork_lat: " + cork_lat + " => cy: " + cy);
+//    println("cork_lng: " + cork_lng[1] + " => cx: " + cx + "\tcork_lat: " + cork_lat + " => cy: " + cy);
 //    timeSlider = createSlider(0, 5, prevTime);
 //    timeSlider.position(0, 10 + canvas.height);
 //    timeSlider.size(1024, 36);
@@ -87,76 +87,100 @@ function  setup() {
 //    var children = xmlWeather.getChildren("time");
 //    println("*** "+xmlWeather.getAttributeCount());
 //    println("*** "+xmlWeather.listChildren());
+
+
     let prod = xmlWeather.getChild("product");
     let times = prod.getChildren();
 
-    //Harmonie data is outputted in 1 hour intervals 
-    for (let i = 0; i < 2; i++) {
-        if ((i + 1) % 2 === 0) {
-            let start = times[i].getString("from");
+    let count = 0;
+
+    for (let i = 0; i < 10; i += 2) {
+        //There are 2 types of forecast data;
+        //harmonie at a given time or ec_test_l  spanning an hour 
+
+        //aggregate every 2 forecats into 1 object
+        for (let j = 0; j < 2; j += 1) {
+
+            let start = times[i + j].getString("from");
             let splt = start.split('T');
-            startDate = splt[0];
             startTime = splt[1].substring(0, 5);
+            if (i == 0) {
+                displayDate = splt[0]; //use first date 
+                displayTime = startTime;
+
+            }
+
             let hour = parseInt(startTime.substring(0, 2));
-            
-            //decide if night or day based on hour
-            if(hour>17 || hour<6){
-                tod = 'n';                
+            println("forecast #" + (i + j) + " | startTime: " + startTime);
+            let loc = times[(i + j)].getChild("location");
+
+            // harmonie has temperature
+            if (loc.getChild("temperature") != null) {
+                let temp = loc.getChild("temperature");
+                t = temp.getString("value");
+                temp = loc.getChild("pressure");
+                press = temp.getString("value");
+                temp = loc.getChild("windSpeed");
+                windS = temp.getString("mps");
+                windB = temp.getString("beaufort");
+                temp = loc.getChild("windDirection");
+                windD = temp.getString("name");
+                temp = loc.getChild("humidity");
+                hum = temp.getString("value");
+
             }
-            else{
-                tod = 'd';
-           
+            // ec_test_l has precipitation
+            else if (loc.getChild("precipitation") != null) {
+
+                let temp = loc.getChild("precipitation");
+                precip = temp.getString("value");
+                let s = loc.getChild("symbol");
+                desc = s.getString("id");
+                symbolNo = s.getString("number");
+                let sn = parseInt(symbolNo);
+                if (sn < 10) {
+                    symbolNo = "0" + symbolNo;
+                }
+                //decide if night or day based on hour
+                if (hour > 17 || hour < 6) {
+                    tod = 'n';
+                } else {
+                    tod = 'd';
+                }
+//           
             }
-      
         }
-        
-//        
-//        if(startTime)
-//        println("Weather forecast #" + i + " | startTime: " + startTime + ", end time: " + endTime);
-        let loc = times[i].getChild("location");
-//        println("list: " + loc.listChildren());
+        println("temperature: " + t);
+        println("precip: " + precip + " mm \t " + desc + " symbol #" + symbolNo);
 
-        //There are 2 types of location data, spanning an hour or at a given time
-        if (loc.getChild("temperature") != null) {
-            let temp = loc.getChild("temperature");
-            t = temp.getString("value");
-            temp = loc.getChild("pressure");
-            press = temp.getString("value");
-            temp = loc.getChild("windSpeed");
-            windS = temp.getString("mps");
-            windB = temp.getString("beaufort");
-            temp = loc.getChild("windDirection");
-            windD = temp.getString("name");
-            temp = loc.getChild("humidity");
-            hum = temp.getString("value");
 
-        } else if (loc.getChild("precipitation") != null) {
-            let temp = loc.getChild("precipitation");
-            precip = temp.getString("value");
-            let s = loc.getChild("symbol");
-            desc = s.getString("id");
-            symbolNo = s.getString("number");
-            let sn = parseInt(symbolNo);
-            if(sn<10){
-                symbolNo = "0"+symbolNo;
-            }
-            println("precip: " + precip + " mm \t " + desc + " symbol #" + symbolNo);
-        }
+        forecasts.push(
+                {"id": count,
+                    "time": startTime,
+                    "temperature": t,
+                    "symbol": symbolNo,
+                    "tod": tod,
+                    "desc": desc
+                });
 
-    }
+        console.log("Aggregate forecast #" + count + " : " + JSON.stringify(forecasts[count]));
+        count += 1;
+
+    } //End loop through xml weather data
     document.getElementById("weatherText").innerHTML =
-            "<h2>Weather for today : " + startDate + " </h2>"
-            + "<h3>Time : " + startTime + " </h3>"
+            "<h2>Weather for today : " + displayDate + " </h2>"
+            + "<h3>Time : " + displayTime + " </h3>"
             + "<strong>Temperature</strong> : " + t + " C<br>"
             + "<strong>Precipitation</strong> : " + precip + " mm <br>"
             + "<strong>Wind: Speed</strong> : " + windS + " mps" + "\t Beaufort Scale: " + windB + "<br>"
             + "<strong>Wind Direction</strong> : " + windD + "<br>"
             + "<strong>Pressure</strong> : " + press + " hPa";
 
-
-    document.getElementById("weatherImage").innerHTML =
-            "<img src=\"" + "public_html/images/Met50v2/" + symbolNo+tod+ ".png" + "\"></img>";
-
+    for (let i = 0; i < count; i += 1) {
+        println("Get symbol: " + forecasts[i].symbol + forecasts[i].tod + ".png");
+        document.getElementById("weatherImage" + i).innerHTML =
+                "<img src=\"" + "public_html/images/Met50v2/" + forecasts[i].symbol + forecasts[i].tod + ".png" + "\"></img>";
+    }
 
 //    if (sourceData != null) {
 //        //spots=new Spot[sourceData.length-1]; //ignore first line
@@ -195,11 +219,11 @@ function  setup() {
 //                    ellipse(this.x, this.y, 10, 10);
 //                }
 //            };
-    //spots[i].show();
-    //console.log("| Spot #"+spots[i].id+"\t" +spots[i].string);
-    // console.log("| Spot #"+spots[i].id+"\t" +spots[i].cork_lat+"\t" 
-    // 	+spots[i].long+"\t" +spots[i].x+"\t" +spots[i].y+"\t"
-    // +spots[i].year+"\t" +spots[i].month+"\t"+spots[i].day);
+//spots[i].show();
+//console.log("| Spot #"+spots[i].id+"\t" +spots[i].string);
+// console.log("| Spot #"+spots[i].id+"\t" +spots[i].cork_lat+"\t" 
+// 	+spots[i].long+"\t" +spots[i].x+"\t" +spots[i].y+"\t"
+// +spots[i].year+"\t" +spots[i].month+"\t"+spots[i].day);
 
 //        }
 //

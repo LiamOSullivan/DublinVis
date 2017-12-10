@@ -1,541 +1,161 @@
-<weatherdata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://api.met.no/weatherapi/locationforecast/1.9/schema" created="2017-12-09T19:59:21Z">
+<weatherdata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://api.met.no/weatherapi/locationforecast/1.9/schema" created="2017-12-10T14:46:25Z">
    <meta>
-      <model name="harmonie" termin="2017-12-09T12:00:00Z" runended="2017-12-09T19:28:29Z" nextrun="2017-12-09T22:00:00Z" from="2017-12-09T20:00:00Z" to="2017-12-11T18:00:00Z" />
-      <model name="ec_test_l" termin="2017-12-09T12:00:00Z" runended="2017-12-09T19:28:29Z" nextrun="2017-12-10T06:00:00Z" from="2017-12-12T00:00:00Z" to="2017-12-19T12:00:00Z" />
+      <model name="harmonie" termin="2017-12-10T06:00:00Z" runended="2017-12-10T09:48:33Z" nextrun="2017-12-10T16:00:00Z" from="2017-12-10T15:00:00Z" to="2017-12-12T12:00:00Z" />
+      <model name="ec_test_l" termin="2017-12-10T00:00:00Z" runended="2017-12-10T09:48:33Z" nextrun="2017-12-10T18:00:00Z" from="2017-12-12T18:00:00Z" to="2017-12-20T00:00:00Z" />
       </meta>
    <product class="pointData">
-      <time datatype="forecast" from="2017-12-09T20:00:00Z" to="2017-12-09T20:00:00Z">
+      <time datatype="forecast" from="2017-12-10T15:00:00Z" to="2017-12-10T15:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="5.7"/>
-            <windDirection id="dd" deg="142.7" name="SE"/>
-            <windSpeed id="ff" mps="4.2" beaufort="3" name="Lett bris"/>
-            <humidity value="90.2" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="1002.9"/>
+            <temperature id="TTT" unit="celsius" value="5.3"/>
+            <windDirection id="dd" deg="278.4" name="W"/>
+            <windSpeed id="ff" mps="6.7" beaufort="4" name="Laber bris"/>
+            <humidity value="79.8" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="975.6"/>
             <cloudiness id="NN" percent="100.0"/>
-            <lowClouds id="LOW" percent="100.0"/>
-            <mediumClouds id="MEDIUM" percent="98.2"/>
-            <highClouds id="HIGH" percent="100.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="4.1"/>
+            <lowClouds id="LOW" percent="99.8"/>
+            <mediumClouds id="MEDIUM" percent="72.9"/>
+            <highClouds id="HIGH" percent="65.3"/>
+            <dewpointTemperature id="TD" unit="celsius" value="2.0"/>
          </location>
       </time>
-      <time datatype="forecast" from="2017-12-09T19:00:00Z" to="2017-12-09T20:00:00Z">
+      <time datatype="forecast" from="2017-12-10T14:00:00Z" to="2017-12-10T15:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <precipitation unit="mm" value="0.2" minvalue="0.2" maxvalue="0.3"/>
+            <precipitation unit="mm" value="0.1" minvalue="0.0" maxvalue="0.3"/>
 <symbol id="Drizzle" number="46"/>
          </location>
       </time>
-      <time datatype="forecast" from="2017-12-09T21:00:00Z" to="2017-12-09T21:00:00Z">
+      <time datatype="forecast" from="2017-12-10T16:00:00Z" to="2017-12-10T16:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="6.2"/>
-            <windDirection id="dd" deg="147.7" name="SE"/>
-            <windSpeed id="ff" mps="4.5" beaufort="3" name="Lett bris"/>
-            <humidity value="91.0" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="1000.2"/>
-            <cloudiness id="NN" percent="100.0"/>
-            <lowClouds id="LOW" percent="100.0"/>
-            <mediumClouds id="MEDIUM" percent="90.5"/>
-            <highClouds id="HIGH" percent="100.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="4.8"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-09T20:00:00Z" to="2017-12-09T21:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <precipitation unit="mm" value="0.5" minvalue="0.4" maxvalue="0.5"/>
-<symbol id="LightRain" number="9"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-09T22:00:00Z" to="2017-12-09T22:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="6.6"/>
-            <windDirection id="dd" deg="146.7" name="SE"/>
-            <windSpeed id="ff" mps="5.2" beaufort="3" name="Lett bris"/>
-            <humidity value="90.4" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="997.5"/>
-            <cloudiness id="NN" percent="100.0"/>
-            <lowClouds id="LOW" percent="100.0"/>
-            <mediumClouds id="MEDIUM" percent="98.6"/>
-            <highClouds id="HIGH" percent="100.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="5.1"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-09T21:00:00Z" to="2017-12-09T22:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <precipitation unit="mm" value="0.6" minvalue="0.5" maxvalue="0.8"/>
-<symbol id="LightRain" number="9"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-09T23:00:00Z" to="2017-12-09T23:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="7.2"/>
-            <windDirection id="dd" deg="155.4" name="SE"/>
-            <windSpeed id="ff" mps="5.0" beaufort="3" name="Lett bris"/>
-            <humidity value="92.8" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="994.5"/>
-            <cloudiness id="NN" percent="100.0"/>
-            <lowClouds id="LOW" percent="100.0"/>
-            <mediumClouds id="MEDIUM" percent="100.0"/>
-            <highClouds id="HIGH" percent="100.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="6.0"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-09T22:00:00Z" to="2017-12-09T23:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <precipitation unit="mm" value="1.6" minvalue="1.5" maxvalue="1.8"/>
-<symbol id="Rain" number="10"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-10T00:00:00Z" to="2017-12-10T00:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="7.4"/>
-            <windDirection id="dd" deg="140.1" name="SE"/>
-            <windSpeed id="ff" mps="5.5" beaufort="3" name="Lett bris"/>
-            <humidity value="90.5" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="990.4"/>
-            <cloudiness id="NN" percent="100.0"/>
-            <lowClouds id="LOW" percent="100.0"/>
-            <mediumClouds id="MEDIUM" percent="99.4"/>
-            <highClouds id="HIGH" percent="100.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="5.9"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-09T23:00:00Z" to="2017-12-10T00:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <precipitation unit="mm" value="2.3" minvalue="1.9" maxvalue="2.8"/>
-<symbol id="Rain" number="10"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-10T01:00:00Z" to="2017-12-10T01:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="7.8"/>
-            <windDirection id="dd" deg="138.2" name="SE"/>
-            <windSpeed id="ff" mps="5.2" beaufort="3" name="Lett bris"/>
-            <humidity value="94.2" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="987.0"/>
-            <cloudiness id="NN" percent="100.0"/>
-            <lowClouds id="LOW" percent="99.9"/>
-            <mediumClouds id="MEDIUM" percent="97.9"/>
-            <highClouds id="HIGH" percent="100.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="6.9"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-10T00:00:00Z" to="2017-12-10T01:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <precipitation unit="mm" value="5.3" minvalue="4.6" maxvalue="6.1"/>
-<symbol id="Rain" number="10"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-10T02:00:00Z" to="2017-12-10T02:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="7.5"/>
-            <windDirection id="dd" deg="193.9" name="S"/>
-            <windSpeed id="ff" mps="0.7" beaufort="1" name="Flau vind"/>
-            <humidity value="97.2" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="984.9"/>
-            <cloudiness id="NN" percent="100.0"/>
-            <lowClouds id="LOW" percent="100.0"/>
-            <mediumClouds id="MEDIUM" percent="77.6"/>
-            <highClouds id="HIGH" percent="100.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="7.1"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-10T01:00:00Z" to="2017-12-10T02:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <precipitation unit="mm" value="1.9" minvalue="0.8" maxvalue="3.2"/>
-<symbol id="Rain" number="10"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-10T03:00:00Z" to="2017-12-10T03:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="7.6"/>
-            <windDirection id="dd" deg="277.9" name="W"/>
-            <windSpeed id="ff" mps="3.7" beaufort="3" name="Lett bris"/>
-            <humidity value="93.1" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="983.4"/>
-            <cloudiness id="NN" percent="98.4"/>
-            <lowClouds id="LOW" percent="97.1"/>
-            <mediumClouds id="MEDIUM" percent="69.2"/>
-            <highClouds id="HIGH" percent="84.8"/>
-            <dewpointTemperature id="TD" unit="celsius" value="6.5"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-10T02:00:00Z" to="2017-12-10T03:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <precipitation unit="mm" value="1.0" minvalue="0.2" maxvalue="1.7"/>
-<symbol id="Rain" number="10"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-10T04:00:00Z" to="2017-12-10T04:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="8.1"/>
-            <windDirection id="dd" deg="290.6" name="W"/>
-            <windSpeed id="ff" mps="6.6" beaufort="4" name="Laber bris"/>
-            <humidity value="85.5" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="982.4"/>
+            <temperature id="TTT" unit="celsius" value="4.4"/>
+            <windDirection id="dd" deg="280.0" name="W"/>
+            <windSpeed id="ff" mps="5.8" beaufort="4" name="Laber bris"/>
+            <humidity value="83.6" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="975.3"/>
             <cloudiness id="NN" percent="100.0"/>
             <lowClouds id="LOW" percent="99.7"/>
-            <mediumClouds id="MEDIUM" percent="96.1"/>
-            <highClouds id="HIGH" percent="44.6"/>
-            <dewpointTemperature id="TD" unit="celsius" value="5.7"/>
+            <mediumClouds id="MEDIUM" percent="94.3"/>
+            <highClouds id="HIGH" percent="70.8"/>
+            <dewpointTemperature id="TD" unit="celsius" value="1.7"/>
          </location>
       </time>
-      <time datatype="forecast" from="2017-12-10T03:00:00Z" to="2017-12-10T04:00:00Z">
+      <time datatype="forecast" from="2017-12-10T15:00:00Z" to="2017-12-10T16:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <precipitation unit="mm" value="0.3" minvalue="0.0" maxvalue="1.1"/>
-<symbol id="LightRain" number="9"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-10T05:00:00Z" to="2017-12-10T05:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="8.1"/>
-            <windDirection id="dd" deg="290.8" name="W"/>
-            <windSpeed id="ff" mps="7.4" beaufort="4" name="Laber bris"/>
-            <humidity value="81.0" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="981.8"/>
-            <cloudiness id="NN" percent="100.0"/>
-            <lowClouds id="LOW" percent="84.0"/>
-            <mediumClouds id="MEDIUM" percent="100.0"/>
-            <highClouds id="HIGH" percent="99.9"/>
-            <dewpointTemperature id="TD" unit="celsius" value="5.0"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-10T04:00:00Z" to="2017-12-10T05:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.2"/>
+            <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.5"/>
 <symbol id="Cloud" number="4"/>
          </location>
       </time>
-      <time datatype="forecast" from="2017-12-10T06:00:00Z" to="2017-12-10T06:00:00Z">
+      <time datatype="forecast" from="2017-12-10T17:00:00Z" to="2017-12-10T17:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="7.5"/>
-            <windDirection id="dd" deg="281.6" name="W"/>
-            <windSpeed id="ff" mps="9.0" beaufort="5" name="Frisk bris"/>
-            <humidity value="82.1" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="981.1"/>
+            <temperature id="TTT" unit="celsius" value="3.3"/>
+            <windDirection id="dd" deg="44.5" name="NE"/>
+            <windSpeed id="ff" mps="2.3" beaufort="2" name="Svak vind"/>
+            <humidity value="88.7" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="976.1"/>
             <cloudiness id="NN" percent="100.0"/>
-            <lowClouds id="LOW" percent="85.7"/>
-            <mediumClouds id="MEDIUM" percent="100.0"/>
-            <highClouds id="HIGH" percent="100.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="4.5"/>
+            <lowClouds id="LOW" percent="100.0"/>
+            <mediumClouds id="MEDIUM" percent="73.1"/>
+            <highClouds id="HIGH" percent="37.2"/>
+            <dewpointTemperature id="TD" unit="celsius" value="1.5"/>
          </location>
       </time>
-      <time datatype="forecast" from="2017-12-10T05:00:00Z" to="2017-12-10T06:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <precipitation unit="mm" value="0.5" minvalue="0.3" maxvalue="0.9"/>
-<symbol id="LightRain" number="9"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-10T07:00:00Z" to="2017-12-10T07:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="7.7"/>
-            <windDirection id="dd" deg="286.6" name="W"/>
-            <windSpeed id="ff" mps="8.4" beaufort="4" name="Laber bris"/>
-            <humidity value="78.3" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="980.3"/>
-            <cloudiness id="NN" percent="100.0"/>
-            <lowClouds id="LOW" percent="56.6"/>
-            <mediumClouds id="MEDIUM" percent="98.3"/>
-            <highClouds id="HIGH" percent="100.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="4.0"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-10T06:00:00Z" to="2017-12-10T07:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <precipitation unit="mm" value="0.3" minvalue="0.2" maxvalue="0.7"/>
-<symbol id="LightRain" number="9"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-10T08:00:00Z" to="2017-12-10T08:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="7.6"/>
-            <windDirection id="dd" deg="284.6" name="W"/>
-            <windSpeed id="ff" mps="8.2" beaufort="4" name="Laber bris"/>
-            <humidity value="72.7" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="979.9"/>
-            <cloudiness id="NN" percent="100.0"/>
-            <lowClouds id="LOW" percent="76.2"/>
-            <mediumClouds id="MEDIUM" percent="47.7"/>
-            <highClouds id="HIGH" percent="100.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="2.9"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-10T07:00:00Z" to="2017-12-10T08:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.1"/>
-<symbol id="Cloud" number="4"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-10T09:00:00Z" to="2017-12-10T09:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="6.8"/>
-            <windDirection id="dd" deg="285.5" name="W"/>
-            <windSpeed id="ff" mps="7.1" beaufort="4" name="Laber bris"/>
-            <humidity value="81.3" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="979.5"/>
-            <cloudiness id="NN" percent="100.0"/>
-            <lowClouds id="LOW" percent="98.0"/>
-            <mediumClouds id="MEDIUM" percent="94.2"/>
-            <highClouds id="HIGH" percent="100.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="3.8"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-10T08:00:00Z" to="2017-12-10T09:00:00Z">
+      <time datatype="forecast" from="2017-12-10T16:00:00Z" to="2017-12-10T17:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
             <precipitation unit="mm" value="0.3" minvalue="0.1" maxvalue="0.5"/>
 <symbol id="LightRain" number="9"/>
          </location>
       </time>
-      <time datatype="forecast" from="2017-12-10T10:00:00Z" to="2017-12-10T10:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="6.7"/>
-            <windDirection id="dd" deg="288.0" name="W"/>
-            <windSpeed id="ff" mps="7.2" beaufort="4" name="Laber bris"/>
-            <humidity value="77.8" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="978.8"/>
-            <cloudiness id="NN" percent="100.0"/>
-            <lowClouds id="LOW" percent="80.5"/>
-            <mediumClouds id="MEDIUM" percent="15.2"/>
-            <highClouds id="HIGH" percent="100.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="3.0"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-10T09:00:00Z" to="2017-12-10T10:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <precipitation unit="mm" value="0.2" minvalue="0.1" maxvalue="0.3"/>
-<symbol id="Drizzle" number="46"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-10T11:00:00Z" to="2017-12-10T11:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="6.4"/>
-            <windDirection id="dd" deg="289.4" name="W"/>
-            <windSpeed id="ff" mps="8.6" beaufort="4" name="Laber bris"/>
-            <humidity value="74.0" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="978.2"/>
-            <cloudiness id="NN" percent="100.0"/>
-            <lowClouds id="LOW" percent="95.6"/>
-            <mediumClouds id="MEDIUM" percent="0.0"/>
-            <highClouds id="HIGH" percent="100.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="2.0"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-10T10:00:00Z" to="2017-12-10T11:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.3"/>
-<symbol id="Cloud" number="4"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-10T12:00:00Z" to="2017-12-10T12:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="5.3"/>
-            <windDirection id="dd" deg="285.7" name="W"/>
-            <windSpeed id="ff" mps="6.5" beaufort="4" name="Laber bris"/>
-            <humidity value="76.0" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="977.3"/>
-            <cloudiness id="NN" percent="97.4"/>
-            <lowClouds id="LOW" percent="86.8"/>
-            <mediumClouds id="MEDIUM" percent="13.7"/>
-            <highClouds id="HIGH" percent="93.5"/>
-            <dewpointTemperature id="TD" unit="celsius" value="1.2"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-10T11:00:00Z" to="2017-12-10T12:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.1"/>
-<symbol id="Cloud" number="4"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-10T13:00:00Z" to="2017-12-10T13:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="3.5"/>
-            <windDirection id="dd" deg="309.5" name="NW"/>
-            <windSpeed id="ff" mps="5.2" beaufort="3" name="Lett bris"/>
-            <humidity value="80.6" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="976.9"/>
-            <cloudiness id="NN" percent="100.0"/>
-            <lowClouds id="LOW" percent="99.9"/>
-            <mediumClouds id="MEDIUM" percent="27.2"/>
-            <highClouds id="HIGH" percent="100.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="0.3"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-10T12:00:00Z" to="2017-12-10T13:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0"/>
-<symbol id="Cloud" number="4"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-10T14:00:00Z" to="2017-12-10T14:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="3.4"/>
-            <windDirection id="dd" deg="20.1" name="N"/>
-            <windSpeed id="ff" mps="6.0" beaufort="4" name="Laber bris"/>
-            <humidity value="88.2" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="977.6"/>
-            <cloudiness id="NN" percent="100.0"/>
-            <lowClouds id="LOW" percent="99.8"/>
-            <mediumClouds id="MEDIUM" percent="93.4"/>
-            <highClouds id="HIGH" percent="100.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="1.5"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-10T13:00:00Z" to="2017-12-10T14:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <precipitation unit="mm" value="0.2" minvalue="0.1" maxvalue="0.5"/>
-<symbol id="Drizzle" number="46"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-10T15:00:00Z" to="2017-12-10T15:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="2.1"/>
-            <windDirection id="dd" deg="24.4" name="NE"/>
-            <windSpeed id="ff" mps="7.0" beaufort="4" name="Laber bris"/>
-            <humidity value="91.4" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="980.1"/>
-            <cloudiness id="NN" percent="100.0"/>
-            <lowClouds id="LOW" percent="96.7"/>
-            <mediumClouds id="MEDIUM" percent="100.0"/>
-            <highClouds id="HIGH" percent="100.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="0.7"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-10T14:00:00Z" to="2017-12-10T15:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <precipitation unit="mm" value="0.7" minvalue="0.5" maxvalue="0.8"/>
-<symbol id="LightRain" number="9"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-10T16:00:00Z" to="2017-12-10T16:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="2.1"/>
-            <windDirection id="dd" deg="33.6" name="NE"/>
-            <windSpeed id="ff" mps="6.2" beaufort="4" name="Laber bris"/>
-            <humidity value="90.0" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="980.9"/>
-            <cloudiness id="NN" percent="100.0"/>
-            <lowClouds id="LOW" percent="86.3"/>
-            <mediumClouds id="MEDIUM" percent="100.0"/>
-            <highClouds id="HIGH" percent="100.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="0.5"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-10T15:00:00Z" to="2017-12-10T16:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <precipitation unit="mm" value="0.4" minvalue="0.2" maxvalue="0.6"/>
-<symbol id="LightRain" number="9"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-10T17:00:00Z" to="2017-12-10T17:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="2.0"/>
-            <windDirection id="dd" deg="34.9" name="NE"/>
-            <windSpeed id="ff" mps="5.5" beaufort="3" name="Lett bris"/>
-            <humidity value="82.2" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="982.1"/>
-            <cloudiness id="NN" percent="99.9"/>
-            <lowClouds id="LOW" percent="49.3"/>
-            <mediumClouds id="MEDIUM" percent="86.6"/>
-            <highClouds id="HIGH" percent="99.7"/>
-            <dewpointTemperature id="TD" unit="celsius" value="-0.9"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-10T16:00:00Z" to="2017-12-10T17:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0"/>
-<symbol id="Cloud" number="4"/>
-         </location>
-      </time>
       <time datatype="forecast" from="2017-12-10T18:00:00Z" to="2017-12-10T18:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="1.4"/>
-            <windDirection id="dd" deg="39.0" name="NE"/>
-            <windSpeed id="ff" mps="5.8" beaufort="4" name="Laber bris"/>
-            <humidity value="81.6" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="982.9"/>
-            <cloudiness id="NN" percent="99.1"/>
-            <lowClouds id="LOW" percent="22.7"/>
-            <mediumClouds id="MEDIUM" percent="3.2"/>
-            <highClouds id="HIGH" percent="98.5"/>
-            <dewpointTemperature id="TD" unit="celsius" value="-1.7"/>
+            <temperature id="TTT" unit="celsius" value="2.1"/>
+            <windDirection id="dd" deg="48.9" name="NE"/>
+            <windSpeed id="ff" mps="6.8" beaufort="4" name="Laber bris"/>
+            <humidity value="87.8" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="978.8"/>
+            <cloudiness id="NN" percent="100.0"/>
+            <lowClouds id="LOW" percent="99.5"/>
+            <mediumClouds id="MEDIUM" percent="94.5"/>
+            <highClouds id="HIGH" percent="61.8"/>
+            <dewpointTemperature id="TD" unit="celsius" value="0.1"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-10T17:00:00Z" to="2017-12-10T18:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0"/>
-<symbol id="Cloud" number="4"/>
+            <precipitation unit="mm" value="0.2" minvalue="0.1" maxvalue="0.4"/>
+<symbol id="Drizzle" number="46"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-10T19:00:00Z" to="2017-12-10T19:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="0.7"/>
-            <windDirection id="dd" deg="32.5" name="NE"/>
-            <windSpeed id="ff" mps="5.1" beaufort="3" name="Lett bris"/>
-            <humidity value="81.1" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="983.9"/>
-            <cloudiness id="NN" percent="99.8"/>
-            <lowClouds id="LOW" percent="2.2"/>
-            <mediumClouds id="MEDIUM" percent="0.0"/>
-            <highClouds id="HIGH" percent="99.8"/>
-            <dewpointTemperature id="TD" unit="celsius" value="-2.4"/>
+            <temperature id="TTT" unit="celsius" value="1.8"/>
+            <windDirection id="dd" deg="43.3" name="NE"/>
+            <windSpeed id="ff" mps="7.4" beaufort="4" name="Laber bris"/>
+            <humidity value="85.9" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="980.3"/>
+            <cloudiness id="NN" percent="99.9"/>
+            <lowClouds id="LOW" percent="88.3"/>
+            <mediumClouds id="MEDIUM" percent="50.2"/>
+            <highClouds id="HIGH" percent="77.3"/>
+            <dewpointTemperature id="TD" unit="celsius" value="-0.5"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-10T18:00:00Z" to="2017-12-10T19:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0"/>
-<symbol id="PartlyCloud" number="3"/>
+            <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.2"/>
+<symbol id="Cloud" number="4"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-10T20:00:00Z" to="2017-12-10T20:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="0.2"/>
-            <windDirection id="dd" deg="26.9" name="NE"/>
-            <windSpeed id="ff" mps="4.9" beaufort="3" name="Lett bris"/>
-            <humidity value="80.4" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="985.1"/>
-            <cloudiness id="NN" percent="99.6"/>
-            <lowClouds id="LOW" percent="1.7"/>
-            <mediumClouds id="MEDIUM" percent="0.0"/>
-            <highClouds id="HIGH" percent="99.5"/>
-            <dewpointTemperature id="TD" unit="celsius" value="-3.0"/>
+            <temperature id="TTT" unit="celsius" value="1.8"/>
+            <windDirection id="dd" deg="36.1" name="NE"/>
+            <windSpeed id="ff" mps="6.5" beaufort="4" name="Laber bris"/>
+            <humidity value="86.3" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="981.7"/>
+            <cloudiness id="NN" percent="100.0"/>
+            <lowClouds id="LOW" percent="87.4"/>
+            <mediumClouds id="MEDIUM" percent="40.8"/>
+            <highClouds id="HIGH" percent="94.0"/>
+            <dewpointTemperature id="TD" unit="celsius" value="-0.4"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-10T19:00:00Z" to="2017-12-10T20:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
             <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0"/>
-<symbol id="PartlyCloud" number="3"/>
+<symbol id="Cloud" number="4"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-10T21:00:00Z" to="2017-12-10T21:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="-0.4"/>
-            <windDirection id="dd" deg="22.0" name="N"/>
-            <windSpeed id="ff" mps="4.8" beaufort="3" name="Lett bris"/>
-            <humidity value="80.2" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="986.1"/>
-            <cloudiness id="NN" percent="88.0"/>
-            <lowClouds id="LOW" percent="1.6"/>
-            <mediumClouds id="MEDIUM" percent="0.0"/>
-            <highClouds id="HIGH" percent="86.4"/>
-            <dewpointTemperature id="TD" unit="celsius" value="-3.6"/>
+            <temperature id="TTT" unit="celsius" value="1.3"/>
+            <windDirection id="dd" deg="36.2" name="NE"/>
+            <windSpeed id="ff" mps="7.1" beaufort="4" name="Laber bris"/>
+            <humidity value="82.6" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="982.9"/>
+            <cloudiness id="NN" percent="94.2"/>
+            <lowClouds id="LOW" percent="37.1"/>
+            <mediumClouds id="MEDIUM" percent="15.5"/>
+            <highClouds id="HIGH" percent="89.6"/>
+            <dewpointTemperature id="TD" unit="celsius" value="-1.5"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-10T20:00:00Z" to="2017-12-10T21:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
             <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0"/>
-<symbol id="PartlyCloud" number="3"/>
+<symbol id="Cloud" number="4"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-10T22:00:00Z" to="2017-12-10T22:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="-0.7"/>
-            <windDirection id="dd" deg="20.7" name="N"/>
-            <windSpeed id="ff" mps="5.1" beaufort="3" name="Lett bris"/>
-            <humidity value="78.5" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="987.2"/>
-            <cloudiness id="NN" percent="54.3"/>
-            <lowClouds id="LOW" percent="1.0"/>
-            <mediumClouds id="MEDIUM" percent="0.0"/>
-            <highClouds id="HIGH" percent="53.4"/>
-            <dewpointTemperature id="TD" unit="celsius" value="-4.2"/>
+            <temperature id="TTT" unit="celsius" value="0.7"/>
+            <windDirection id="dd" deg="25.9" name="NE"/>
+            <windSpeed id="ff" mps="6.4" beaufort="4" name="Laber bris"/>
+            <humidity value="77.0" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="984.2"/>
+            <cloudiness id="NN" percent="69.6"/>
+            <lowClouds id="LOW" percent="0.9"/>
+            <mediumClouds id="MEDIUM" percent="13.1"/>
+            <highClouds id="HIGH" percent="66.1"/>
+            <dewpointTemperature id="TD" unit="celsius" value="-3.1"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-10T21:00:00Z" to="2017-12-10T22:00:00Z">
@@ -546,36 +166,36 @@
       </time>
       <time datatype="forecast" from="2017-12-10T23:00:00Z" to="2017-12-10T23:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="-0.9"/>
-            <windDirection id="dd" deg="14.7" name="N"/>
-            <windSpeed id="ff" mps="4.6" beaufort="3" name="Lett bris"/>
-            <humidity value="75.5" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="988.1"/>
-            <cloudiness id="NN" percent="14.2"/>
-            <lowClouds id="LOW" percent="0.1"/>
-            <mediumClouds id="MEDIUM" percent="0.0"/>
-            <highClouds id="HIGH" percent="14.2"/>
-            <dewpointTemperature id="TD" unit="celsius" value="-5.0"/>
+            <temperature id="TTT" unit="celsius" value="0.1"/>
+            <windDirection id="dd" deg="27.1" name="NE"/>
+            <windSpeed id="ff" mps="6.1" beaufort="4" name="Laber bris"/>
+            <humidity value="76.2" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="985.6"/>
+            <cloudiness id="NN" percent="2.5"/>
+            <lowClouds id="LOW" percent="0.2"/>
+            <mediumClouds id="MEDIUM" percent="2.3"/>
+            <highClouds id="HIGH" percent="0.0"/>
+            <dewpointTemperature id="TD" unit="celsius" value="-3.9"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-10T22:00:00Z" to="2017-12-10T23:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
             <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0"/>
-<symbol id="LightCloud" number="2"/>
+<symbol id="Sun" number="1"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-11T00:00:00Z" to="2017-12-11T00:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="-1.4"/>
-            <windDirection id="dd" deg="7.1" name="N"/>
-            <windSpeed id="ff" mps="4.5" beaufort="3" name="Lett bris"/>
-            <humidity value="75.1" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="988.8"/>
-            <cloudiness id="NN" percent="0.1"/>
-            <lowClouds id="LOW" percent="0.1"/>
+            <temperature id="TTT" unit="celsius" value="-0.1"/>
+            <windDirection id="dd" deg="24.9" name="NE"/>
+            <windSpeed id="ff" mps="6.2" beaufort="4" name="Laber bris"/>
+            <humidity value="69.4" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="986.3"/>
+            <cloudiness id="NN" percent="0.0"/>
+            <lowClouds id="LOW" percent="0.0"/>
             <mediumClouds id="MEDIUM" percent="0.0"/>
             <highClouds id="HIGH" percent="0.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="-5.5"/>
+            <dewpointTemperature id="TD" unit="celsius" value="-5.3"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-10T23:00:00Z" to="2017-12-11T00:00:00Z">
@@ -586,16 +206,16 @@
       </time>
       <time datatype="forecast" from="2017-12-11T01:00:00Z" to="2017-12-11T01:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="-2.1"/>
-            <windDirection id="dd" deg="358.3" name="N"/>
-            <windSpeed id="ff" mps="4.5" beaufort="3" name="Lett bris"/>
-            <humidity value="78.0" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="989.3"/>
+            <temperature id="TTT" unit="celsius" value="-0.4"/>
+            <windDirection id="dd" deg="15.4" name="N"/>
+            <windSpeed id="ff" mps="6.3" beaufort="4" name="Laber bris"/>
+            <humidity value="64.7" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="987.3"/>
             <cloudiness id="NN" percent="0.0"/>
             <lowClouds id="LOW" percent="0.0"/>
             <mediumClouds id="MEDIUM" percent="0.0"/>
             <highClouds id="HIGH" percent="0.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="-5.7"/>
+            <dewpointTemperature id="TD" unit="celsius" value="-6.5"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-11T00:00:00Z" to="2017-12-11T01:00:00Z">
@@ -606,16 +226,16 @@
       </time>
       <time datatype="forecast" from="2017-12-11T02:00:00Z" to="2017-12-11T02:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="-2.4"/>
-            <windDirection id="dd" deg="355.4" name="N"/>
-            <windSpeed id="ff" mps="5.0" beaufort="3" name="Lett bris"/>
-            <humidity value="80.8" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="989.6"/>
+            <temperature id="TTT" unit="celsius" value="-0.4"/>
+            <windDirection id="dd" deg="17.4" name="N"/>
+            <windSpeed id="ff" mps="6.1" beaufort="4" name="Laber bris"/>
+            <humidity value="63.4" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="988.0"/>
             <cloudiness id="NN" percent="0.0"/>
             <lowClouds id="LOW" percent="0.0"/>
             <mediumClouds id="MEDIUM" percent="0.0"/>
             <highClouds id="HIGH" percent="0.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="-5.5"/>
+            <dewpointTemperature id="TD" unit="celsius" value="-6.8"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-11T01:00:00Z" to="2017-12-11T02:00:00Z">
@@ -626,16 +246,16 @@
       </time>
       <time datatype="forecast" from="2017-12-11T03:00:00Z" to="2017-12-11T03:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="-1.5"/>
-            <windDirection id="dd" deg="357.5" name="N"/>
-            <windSpeed id="ff" mps="5.0" beaufort="3" name="Lett bris"/>
-            <humidity value="79.9" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="989.5"/>
+            <temperature id="TTT" unit="celsius" value="-1.0"/>
+            <windDirection id="dd" deg="4.3" name="N"/>
+            <windSpeed id="ff" mps="5.1" beaufort="3" name="Lett bris"/>
+            <humidity value="68.1" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="989.1"/>
             <cloudiness id="NN" percent="0.1"/>
             <lowClouds id="LOW" percent="0.1"/>
             <mediumClouds id="MEDIUM" percent="0.0"/>
             <highClouds id="HIGH" percent="0.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="-4.8"/>
+            <dewpointTemperature id="TD" unit="celsius" value="-6.4"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-11T02:00:00Z" to="2017-12-11T03:00:00Z">
@@ -646,16 +266,16 @@
       </time>
       <time datatype="forecast" from="2017-12-11T04:00:00Z" to="2017-12-11T04:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="-0.6"/>
-            <windDirection id="dd" deg="356.9" name="N"/>
-            <windSpeed id="ff" mps="6.2" beaufort="4" name="Laber bris"/>
-            <humidity value="80.5" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="989.8"/>
-            <cloudiness id="NN" percent="0.8"/>
-            <lowClouds id="LOW" percent="0.8"/>
+            <temperature id="TTT" unit="celsius" value="-1.5"/>
+            <windDirection id="dd" deg="2.0" name="N"/>
+            <windSpeed id="ff" mps="4.6" beaufort="3" name="Lett bris"/>
+            <humidity value="74.6" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="989.9"/>
+            <cloudiness id="NN" percent="0.0"/>
+            <lowClouds id="LOW" percent="0.0"/>
             <mediumClouds id="MEDIUM" percent="0.0"/>
             <highClouds id="HIGH" percent="0.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="-3.8"/>
+            <dewpointTemperature id="TD" unit="celsius" value="-5.6"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-11T03:00:00Z" to="2017-12-11T04:00:00Z">
@@ -666,16 +286,16 @@
       </time>
       <time datatype="forecast" from="2017-12-11T05:00:00Z" to="2017-12-11T05:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="0.1"/>
-            <windDirection id="dd" deg="355.0" name="N"/>
-            <windSpeed id="ff" mps="6.4" beaufort="4" name="Laber bris"/>
-            <humidity value="86.7" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="989.7"/>
-            <cloudiness id="NN" percent="2.4"/>
-            <lowClouds id="LOW" percent="2.4"/>
+            <temperature id="TTT" unit="celsius" value="-0.7"/>
+            <windDirection id="dd" deg="4.8" name="N"/>
+            <windSpeed id="ff" mps="4.7" beaufort="3" name="Lett bris"/>
+            <humidity value="78.1" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="990.1"/>
+            <cloudiness id="NN" percent="2.9"/>
+            <lowClouds id="LOW" percent="2.9"/>
             <mediumClouds id="MEDIUM" percent="0.0"/>
             <highClouds id="HIGH" percent="0.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="-2.0"/>
+            <dewpointTemperature id="TD" unit="celsius" value="-4.3"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-11T04:00:00Z" to="2017-12-11T05:00:00Z">
@@ -686,56 +306,56 @@
       </time>
       <time datatype="forecast" from="2017-12-11T06:00:00Z" to="2017-12-11T06:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="1.4"/>
-            <windDirection id="dd" deg="354.9" name="N"/>
-            <windSpeed id="ff" mps="7.6" beaufort="4" name="Laber bris"/>
-            <humidity value="86.0" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="990.0"/>
-            <cloudiness id="NN" percent="5.6"/>
-            <lowClouds id="LOW" percent="5.6"/>
+            <temperature id="TTT" unit="celsius" value="-0.1"/>
+            <windDirection id="dd" deg="0.3" name="N"/>
+            <windSpeed id="ff" mps="7.1" beaufort="4" name="Laber bris"/>
+            <humidity value="91.4" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="990.5"/>
+            <cloudiness id="NN" percent="56.2"/>
+            <lowClouds id="LOW" percent="56.2"/>
             <mediumClouds id="MEDIUM" percent="0.0"/>
             <highClouds id="HIGH" percent="0.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="-0.8"/>
+            <dewpointTemperature id="TD" unit="celsius" value="-1.5"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-11T05:00:00Z" to="2017-12-11T06:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
             <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0"/>
-<symbol id="Sun" number="1"/>
+<symbol id="PartlyCloud" number="3"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-11T07:00:00Z" to="2017-12-11T07:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="1.9"/>
-            <windDirection id="dd" deg="0.3" name="N"/>
-            <windSpeed id="ff" mps="8.3" beaufort="4" name="Laber bris"/>
-            <humidity value="84.9" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="991.0"/>
-            <cloudiness id="NN" percent="20.1"/>
-            <lowClouds id="LOW" percent="20.1"/>
-            <mediumClouds id="MEDIUM" percent="0.0"/>
-            <highClouds id="HIGH" percent="0.0"/>
+            <temperature id="TTT" unit="celsius" value="1.1"/>
+            <windDirection id="dd" deg="1.0" name="N"/>
+            <windSpeed id="ff" mps="5.7" beaufort="4" name="Laber bris"/>
+            <humidity value="89.6" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="991.4"/>
+            <cloudiness id="NN" percent="49.4"/>
+            <lowClouds id="LOW" percent="49.4"/>
+            <mediumClouds id="MEDIUM" percent="0.3"/>
+            <highClouds id="HIGH" percent="0.2"/>
             <dewpointTemperature id="TD" unit="celsius" value="-0.6"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-11T06:00:00Z" to="2017-12-11T07:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
             <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0"/>
-<symbol id="LightCloud" number="2"/>
+<symbol id="PartlyCloud" number="3"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-11T08:00:00Z" to="2017-12-11T08:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="1.9"/>
-            <windDirection id="dd" deg="1.8" name="N"/>
-            <windSpeed id="ff" mps="6.8" beaufort="4" name="Laber bris"/>
-            <humidity value="85.5" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="992.1"/>
-            <cloudiness id="NN" percent="15.8"/>
-            <lowClouds id="LOW" percent="15.6"/>
-            <mediumClouds id="MEDIUM" percent="0.2"/>
+            <temperature id="TTT" unit="celsius" value="1.5"/>
+            <windDirection id="dd" deg="359.5" name="N"/>
+            <windSpeed id="ff" mps="7.3" beaufort="4" name="Laber bris"/>
+            <humidity value="88.6" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="992.2"/>
+            <cloudiness id="NN" percent="30.7"/>
+            <lowClouds id="LOW" percent="30.7"/>
+            <mediumClouds id="MEDIUM" percent="0.0"/>
             <highClouds id="HIGH" percent="0.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="-0.5"/>
+            <dewpointTemperature id="TD" unit="celsius" value="-0.3"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-11T07:00:00Z" to="2017-12-11T08:00:00Z">
@@ -746,36 +366,36 @@
       </time>
       <time datatype="forecast" from="2017-12-11T09:00:00Z" to="2017-12-11T09:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="2.3"/>
-            <windDirection id="dd" deg="357.9" name="N"/>
-            <windSpeed id="ff" mps="9.0" beaufort="5" name="Frisk bris"/>
-            <humidity value="86.9" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="992.7"/>
-            <cloudiness id="NN" percent="18.7"/>
-            <lowClouds id="LOW" percent="18.4"/>
-            <mediumClouds id="MEDIUM" percent="0.4"/>
+            <temperature id="TTT" unit="celsius" value="2.1"/>
+            <windDirection id="dd" deg="0.2" name="N"/>
+            <windSpeed id="ff" mps="6.8" beaufort="4" name="Laber bris"/>
+            <humidity value="86.4" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="993.1"/>
+            <cloudiness id="NN" percent="8.8"/>
+            <lowClouds id="LOW" percent="8.8"/>
+            <mediumClouds id="MEDIUM" percent="0.0"/>
             <highClouds id="HIGH" percent="0.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="0.2"/>
+            <dewpointTemperature id="TD" unit="celsius" value="-0.1"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-11T08:00:00Z" to="2017-12-11T09:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
             <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0"/>
-<symbol id="LightCloud" number="2"/>
+<symbol id="Sun" number="1"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-11T10:00:00Z" to="2017-12-11T10:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="3.2"/>
-            <windDirection id="dd" deg="359.6" name="N"/>
-            <windSpeed id="ff" mps="8.1" beaufort="4" name="Laber bris"/>
-            <humidity value="83.0" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="993.4"/>
-            <cloudiness id="NN" percent="7.1"/>
-            <lowClouds id="LOW" percent="4.0"/>
-            <mediumClouds id="MEDIUM" percent="4.6"/>
+            <temperature id="TTT" unit="celsius" value="2.7"/>
+            <windDirection id="dd" deg="356.2" name="N"/>
+            <windSpeed id="ff" mps="6.7" beaufort="4" name="Laber bris"/>
+            <humidity value="85.0" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="994.1"/>
+            <cloudiness id="NN" percent="12.5"/>
+            <lowClouds id="LOW" percent="12.5"/>
+            <mediumClouds id="MEDIUM" percent="0.0"/>
             <highClouds id="HIGH" percent="0.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="0.5"/>
+            <dewpointTemperature id="TD" unit="celsius" value="0.2"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-11T09:00:00Z" to="2017-12-11T10:00:00Z">
@@ -788,14 +408,14 @@
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
             <temperature id="TTT" unit="celsius" value="3.8"/>
             <windDirection id="dd" deg="353.9" name="N"/>
-            <windSpeed id="ff" mps="7.3" beaufort="4" name="Laber bris"/>
-            <humidity value="82.9" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="995.1"/>
-            <cloudiness id="NN" percent="27.4"/>
-            <lowClouds id="LOW" percent="19.9"/>
-            <mediumClouds id="MEDIUM" percent="19.8"/>
-            <highClouds id="HIGH" percent="0.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="1.0"/>
+            <windSpeed id="ff" mps="6.5" beaufort="4" name="Laber bris"/>
+            <humidity value="82.6" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="995.0"/>
+            <cloudiness id="NN" percent="19.6"/>
+            <lowClouds id="LOW" percent="10.8"/>
+            <mediumClouds id="MEDIUM" percent="8.4"/>
+            <highClouds id="HIGH" percent="4.9"/>
+            <dewpointTemperature id="TD" unit="celsius" value="0.9"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-11T10:00:00Z" to="2017-12-11T11:00:00Z">
@@ -806,55 +426,55 @@
       </time>
       <time datatype="forecast" from="2017-12-11T12:00:00Z" to="2017-12-11T12:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="4.6"/>
-            <windDirection id="dd" deg="354.8" name="N"/>
-            <windSpeed id="ff" mps="6.5" beaufort="4" name="Laber bris"/>
+            <temperature id="TTT" unit="celsius" value="4.7"/>
+            <windDirection id="dd" deg="2.1" name="N"/>
+            <windSpeed id="ff" mps="7.3" beaufort="4" name="Laber bris"/>
             <humidity value="76.9" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="995.8"/>
-            <cloudiness id="NN" percent="1.8"/>
-            <lowClouds id="LOW" percent="1.8"/>
-            <mediumClouds id="MEDIUM" percent="0.0"/>
-            <highClouds id="HIGH" percent="0.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="0.8"/>
+            <pressure id="pr" unit="hPa" value="995.1"/>
+            <cloudiness id="NN" percent="28.3"/>
+            <lowClouds id="LOW" percent="7.0"/>
+            <mediumClouds id="MEDIUM" percent="8.1"/>
+            <highClouds id="HIGH" percent="21.5"/>
+            <dewpointTemperature id="TD" unit="celsius" value="0.9"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-11T11:00:00Z" to="2017-12-11T12:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
             <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0"/>
-<symbol id="Sun" number="1"/>
+<symbol id="LightCloud" number="2"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-11T13:00:00Z" to="2017-12-11T13:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="5.0"/>
-            <windDirection id="dd" deg="354.1" name="N"/>
-            <windSpeed id="ff" mps="6.6" beaufort="4" name="Laber bris"/>
-            <humidity value="77.0" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="996.7"/>
-            <cloudiness id="NN" percent="13.7"/>
-            <lowClouds id="LOW" percent="13.7"/>
-            <mediumClouds id="MEDIUM" percent="0.0"/>
-            <highClouds id="HIGH" percent="0.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="1.2"/>
+            <temperature id="TTT" unit="celsius" value="4.9"/>
+            <windDirection id="dd" deg="1.5" name="N"/>
+            <windSpeed id="ff" mps="8.1" beaufort="4" name="Laber bris"/>
+            <humidity value="76.5" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="995.7"/>
+            <cloudiness id="NN" percent="48.6"/>
+            <lowClouds id="LOW" percent="4.9"/>
+            <mediumClouds id="MEDIUM" percent="29.3"/>
+            <highClouds id="HIGH" percent="38.5"/>
+            <dewpointTemperature id="TD" unit="celsius" value="0.9"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-11T12:00:00Z" to="2017-12-11T13:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
             <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0"/>
-<symbol id="LightCloud" number="2"/>
+<symbol id="PartlyCloud" number="3"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-11T14:00:00Z" to="2017-12-11T14:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="5.0"/>
-            <windDirection id="dd" deg="351.5" name="N"/>
-            <windSpeed id="ff" mps="7.2" beaufort="4" name="Laber bris"/>
-            <humidity value="77.0" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="997.0"/>
-            <cloudiness id="NN" percent="21.5"/>
-            <lowClouds id="LOW" percent="21.3"/>
-            <mediumClouds id="MEDIUM" percent="0.1"/>
-            <highClouds id="HIGH" percent="0.0"/>
+            <temperature id="TTT" unit="celsius" value="5.2"/>
+            <windDirection id="dd" deg="350.6" name="N"/>
+            <windSpeed id="ff" mps="8.1" beaufort="4" name="Laber bris"/>
+            <humidity value="76.1" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="996.3"/>
+            <cloudiness id="NN" percent="20.8"/>
+            <lowClouds id="LOW" percent="13.4"/>
+            <mediumClouds id="MEDIUM" percent="5.0"/>
+            <highClouds id="HIGH" percent="3.9"/>
             <dewpointTemperature id="TD" unit="celsius" value="1.2"/>
          </location>
       </time>
@@ -866,16 +486,16 @@
       </time>
       <time datatype="forecast" from="2017-12-11T15:00:00Z" to="2017-12-11T15:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="4.5"/>
-            <windDirection id="dd" deg="0.2" name="N"/>
-            <windSpeed id="ff" mps="6.9" beaufort="4" name="Laber bris"/>
-            <humidity value="80.5" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="998.2"/>
-            <cloudiness id="NN" percent="37.3"/>
-            <lowClouds id="LOW" percent="31.1"/>
-            <mediumClouds id="MEDIUM" percent="7.8"/>
+            <temperature id="TTT" unit="celsius" value="4.8"/>
+            <windDirection id="dd" deg="1.3" name="N"/>
+            <windSpeed id="ff" mps="7.8" beaufort="4" name="Laber bris"/>
+            <humidity value="76.3" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="997.7"/>
+            <cloudiness id="NN" percent="34.2"/>
+            <lowClouds id="LOW" percent="27.3"/>
+            <mediumClouds id="MEDIUM" percent="16.9"/>
             <highClouds id="HIGH" percent="0.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="1.2"/>
+            <dewpointTemperature id="TD" unit="celsius" value="0.9"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-11T14:00:00Z" to="2017-12-11T15:00:00Z">
@@ -887,35 +507,35 @@
       <time datatype="forecast" from="2017-12-11T16:00:00Z" to="2017-12-11T16:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
             <temperature id="TTT" unit="celsius" value="4.2"/>
-            <windDirection id="dd" deg="355.8" name="N"/>
-            <windSpeed id="ff" mps="5.7" beaufort="4" name="Laber bris"/>
-            <humidity value="79.5" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="999.1"/>
-            <cloudiness id="NN" percent="28.7"/>
-            <lowClouds id="LOW" percent="28.7"/>
-            <mediumClouds id="MEDIUM" percent="0.3"/>
-            <highClouds id="HIGH" percent="0.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="0.8"/>
+            <windDirection id="dd" deg="355.1" name="N"/>
+            <windSpeed id="ff" mps="6.5" beaufort="4" name="Laber bris"/>
+            <humidity value="80.6" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="998.6"/>
+            <cloudiness id="NN" percent="11.6"/>
+            <lowClouds id="LOW" percent="3.2"/>
+            <mediumClouds id="MEDIUM" percent="8.7"/>
+            <highClouds id="HIGH" percent="0.8"/>
+            <dewpointTemperature id="TD" unit="celsius" value="1.0"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-11T15:00:00Z" to="2017-12-11T16:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
             <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0"/>
-<symbol id="LightCloud" number="2"/>
+<symbol id="Sun" number="1"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-11T17:00:00Z" to="2017-12-11T17:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="3.5"/>
-            <windDirection id="dd" deg="357.6" name="N"/>
-            <windSpeed id="ff" mps="5.3" beaufort="3" name="Lett bris"/>
-            <humidity value="81.1" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="1000.4"/>
-            <cloudiness id="NN" percent="11.8"/>
-            <lowClouds id="LOW" percent="7.1"/>
-            <mediumClouds id="MEDIUM" percent="5.9"/>
+            <temperature id="TTT" unit="celsius" value="3.7"/>
+            <windDirection id="dd" deg="352.5" name="N"/>
+            <windSpeed id="ff" mps="6.4" beaufort="4" name="Laber bris"/>
+            <humidity value="82.0" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1000.0"/>
+            <cloudiness id="NN" percent="13.0"/>
+            <lowClouds id="LOW" percent="7.0"/>
+            <mediumClouds id="MEDIUM" percent="7.4"/>
             <highClouds id="HIGH" percent="0.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="0.4"/>
+            <dewpointTemperature id="TD" unit="celsius" value="0.7"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-11T16:00:00Z" to="2017-12-11T17:00:00Z">
@@ -926,16 +546,16 @@
       </time>
       <time datatype="forecast" from="2017-12-11T18:00:00Z" to="2017-12-11T18:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="3.1"/>
-            <windDirection id="dd" deg="349.4" name="N"/>
-            <windSpeed id="ff" mps="4.5" beaufort="3" name="Lett bris"/>
-            <humidity value="86.4" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="1001.2"/>
-            <cloudiness id="NN" percent="3.7"/>
-            <lowClouds id="LOW" percent="3.7"/>
+            <temperature id="TTT" unit="celsius" value="3.6"/>
+            <windDirection id="dd" deg="354.7" name="N"/>
+            <windSpeed id="ff" mps="7.4" beaufort="4" name="Laber bris"/>
+            <humidity value="81.4" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1001.0"/>
+            <cloudiness id="NN" percent="8.2"/>
+            <lowClouds id="LOW" percent="8.2"/>
             <mediumClouds id="MEDIUM" percent="0.0"/>
             <highClouds id="HIGH" percent="0.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="0.9"/>
+            <dewpointTemperature id="TD" unit="celsius" value="0.6"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-11T17:00:00Z" to="2017-12-11T18:00:00Z">
@@ -944,88 +564,394 @@
 <symbol id="Sun" number="1"/>
          </location>
       </time>
-      <time datatype="forecast" from="2017-12-12T00:00:00Z" to="2017-12-12T00:00:00Z">
+      <time datatype="forecast" from="2017-12-11T19:00:00Z" to="2017-12-11T19:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="1.9"/>
-            <windDirection id="dd" deg="322.1" name="NW"/>
-            <windSpeed id="ff" mps="3.9" beaufort="3" name="Lett bris"/>
-            <humidity value="88.2" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="1005.5"/>
-            <cloudiness id="NN" percent="0.0"/>
-            <lowClouds id="LOW" percent="0.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="0.0"/>
+            <temperature id="TTT" unit="celsius" value="3.3"/>
+            <windDirection id="dd" deg="350.8" name="N"/>
+            <windSpeed id="ff" mps="7.2" beaufort="4" name="Laber bris"/>
+            <humidity value="83.1" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1001.5"/>
+            <cloudiness id="NN" percent="0.6"/>
+            <lowClouds id="LOW" percent="0.6"/>
+            <mediumClouds id="MEDIUM" percent="0.0"/>
+            <highClouds id="HIGH" percent="0.0"/>
+            <dewpointTemperature id="TD" unit="celsius" value="0.6"/>
          </location>
       </time>
-      <time datatype="forecast" from="2017-12-11T18:00:00Z" to="2017-12-12T00:00:00Z">
+      <time datatype="forecast" from="2017-12-11T18:00:00Z" to="2017-12-11T19:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <precipitation unit="mm" value="0.0"/>
+            <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0"/>
 <symbol id="Sun" number="1"/>
+         </location>
+      </time>
+      <time datatype="forecast" from="2017-12-11T20:00:00Z" to="2017-12-11T20:00:00Z">
+         <location altitude="39" latitude="51.8969" longitude="-8.4863">
+            <temperature id="TTT" unit="celsius" value="3.1"/>
+            <windDirection id="dd" deg="346.3" name="N"/>
+            <windSpeed id="ff" mps="6.9" beaufort="4" name="Laber bris"/>
+            <humidity value="83.6" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1002.2"/>
+            <cloudiness id="NN" percent="0.4"/>
+            <lowClouds id="LOW" percent="0.4"/>
+            <mediumClouds id="MEDIUM" percent="0.0"/>
+            <highClouds id="HIGH" percent="0.0"/>
+            <dewpointTemperature id="TD" unit="celsius" value="0.5"/>
+         </location>
+      </time>
+      <time datatype="forecast" from="2017-12-11T19:00:00Z" to="2017-12-11T20:00:00Z">
+         <location altitude="39" latitude="51.8969" longitude="-8.4863">
+            <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0"/>
+<symbol id="Sun" number="1"/>
+         </location>
+      </time>
+      <time datatype="forecast" from="2017-12-11T21:00:00Z" to="2017-12-11T21:00:00Z">
+         <location altitude="39" latitude="51.8969" longitude="-8.4863">
+            <temperature id="TTT" unit="celsius" value="3.2"/>
+            <windDirection id="dd" deg="351.0" name="N"/>
+            <windSpeed id="ff" mps="6.9" beaufort="4" name="Laber bris"/>
+            <humidity value="83.1" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1003.0"/>
+            <cloudiness id="NN" percent="0.0"/>
+            <lowClouds id="LOW" percent="0.0"/>
+            <mediumClouds id="MEDIUM" percent="0.0"/>
+            <highClouds id="HIGH" percent="0.0"/>
+            <dewpointTemperature id="TD" unit="celsius" value="0.5"/>
+         </location>
+      </time>
+      <time datatype="forecast" from="2017-12-11T20:00:00Z" to="2017-12-11T21:00:00Z">
+         <location altitude="39" latitude="51.8969" longitude="-8.4863">
+            <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0"/>
+<symbol id="Sun" number="1"/>
+         </location>
+      </time>
+      <time datatype="forecast" from="2017-12-11T22:00:00Z" to="2017-12-11T22:00:00Z">
+         <location altitude="39" latitude="51.8969" longitude="-8.4863">
+            <temperature id="TTT" unit="celsius" value="3.5"/>
+            <windDirection id="dd" deg="355.8" name="N"/>
+            <windSpeed id="ff" mps="6.4" beaufort="4" name="Laber bris"/>
+            <humidity value="82.0" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1003.6"/>
+            <cloudiness id="NN" percent="0.0"/>
+            <lowClouds id="LOW" percent="0.0"/>
+            <mediumClouds id="MEDIUM" percent="0.0"/>
+            <highClouds id="HIGH" percent="0.0"/>
+            <dewpointTemperature id="TD" unit="celsius" value="0.5"/>
+         </location>
+      </time>
+      <time datatype="forecast" from="2017-12-11T21:00:00Z" to="2017-12-11T22:00:00Z">
+         <location altitude="39" latitude="51.8969" longitude="-8.4863">
+            <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0"/>
+<symbol id="Sun" number="1"/>
+         </location>
+      </time>
+      <time datatype="forecast" from="2017-12-11T23:00:00Z" to="2017-12-11T23:00:00Z">
+         <location altitude="39" latitude="51.8969" longitude="-8.4863">
+            <temperature id="TTT" unit="celsius" value="3.2"/>
+            <windDirection id="dd" deg="355.3" name="N"/>
+            <windSpeed id="ff" mps="3.0" beaufort="2" name="Svak vind"/>
+            <humidity value="84.0" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1004.7"/>
+            <cloudiness id="NN" percent="0.1"/>
+            <lowClouds id="LOW" percent="0.1"/>
+            <mediumClouds id="MEDIUM" percent="0.0"/>
+            <highClouds id="HIGH" percent="0.0"/>
+            <dewpointTemperature id="TD" unit="celsius" value="0.6"/>
+         </location>
+      </time>
+      <time datatype="forecast" from="2017-12-11T22:00:00Z" to="2017-12-11T23:00:00Z">
+         <location altitude="39" latitude="51.8969" longitude="-8.4863">
+            <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0"/>
+<symbol id="Sun" number="1"/>
+         </location>
+      </time>
+      <time datatype="forecast" from="2017-12-12T00:00:00Z" to="2017-12-12T00:00:00Z">
+         <location altitude="39" latitude="51.8969" longitude="-8.4863">
+            <temperature id="TTT" unit="celsius" value="2.8"/>
+            <windDirection id="dd" deg="336.1" name="NW"/>
+            <windSpeed id="ff" mps="2.1" beaufort="2" name="Svak vind"/>
+            <humidity value="81.3" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1005.2"/>
+            <cloudiness id="NN" percent="19.8"/>
+            <lowClouds id="LOW" percent="0.0"/>
+            <mediumClouds id="MEDIUM" percent="0.0"/>
+            <highClouds id="HIGH" percent="19.8"/>
+            <dewpointTemperature id="TD" unit="celsius" value="-0.2"/>
+         </location>
+      </time>
+      <time datatype="forecast" from="2017-12-11T23:00:00Z" to="2017-12-12T00:00:00Z">
+         <location altitude="39" latitude="51.8969" longitude="-8.4863">
+            <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0"/>
+<symbol id="LightCloud" number="2"/>
+         </location>
+      </time>
+      <time datatype="forecast" from="2017-12-12T01:00:00Z" to="2017-12-12T01:00:00Z">
+         <location altitude="39" latitude="51.8969" longitude="-8.4863">
+            <temperature id="TTT" unit="celsius" value="3.0"/>
+            <windDirection id="dd" deg="306.5" name="NW"/>
+            <windSpeed id="ff" mps="2.1" beaufort="2" name="Svak vind"/>
+            <humidity value="78.3" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1005.7"/>
+            <cloudiness id="NN" percent="97.0"/>
+            <lowClouds id="LOW" percent="0.0"/>
+            <mediumClouds id="MEDIUM" percent="0.0"/>
+            <highClouds id="HIGH" percent="97.0"/>
+            <dewpointTemperature id="TD" unit="celsius" value="-0.6"/>
+         </location>
+      </time>
+      <time datatype="forecast" from="2017-12-12T00:00:00Z" to="2017-12-12T01:00:00Z">
+         <location altitude="39" latitude="51.8969" longitude="-8.4863">
+            <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0"/>
+<symbol id="PartlyCloud" number="3"/>
+         </location>
+      </time>
+      <time datatype="forecast" from="2017-12-12T02:00:00Z" to="2017-12-12T02:00:00Z">
+         <location altitude="39" latitude="51.8969" longitude="-8.4863">
+            <temperature id="TTT" unit="celsius" value="2.9"/>
+            <windDirection id="dd" deg="323.9" name="NW"/>
+            <windSpeed id="ff" mps="2.7" beaufort="2" name="Svak vind"/>
+            <humidity value="78.3" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1005.8"/>
+            <cloudiness id="NN" percent="93.1"/>
+            <lowClouds id="LOW" percent="0.0"/>
+            <mediumClouds id="MEDIUM" percent="0.0"/>
+            <highClouds id="HIGH" percent="93.1"/>
+            <dewpointTemperature id="TD" unit="celsius" value="-0.7"/>
+         </location>
+      </time>
+      <time datatype="forecast" from="2017-12-12T01:00:00Z" to="2017-12-12T02:00:00Z">
+         <location altitude="39" latitude="51.8969" longitude="-8.4863">
+            <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0"/>
+<symbol id="PartlyCloud" number="3"/>
+         </location>
+      </time>
+      <time datatype="forecast" from="2017-12-12T03:00:00Z" to="2017-12-12T03:00:00Z">
+         <location altitude="39" latitude="51.8969" longitude="-8.4863">
+            <temperature id="TTT" unit="celsius" value="1.9"/>
+            <windDirection id="dd" deg="278.4" name="W"/>
+            <windSpeed id="ff" mps="1.9" beaufort="1" name="Flau vind"/>
+            <humidity value="84.6" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1006.2"/>
+            <cloudiness id="NN" percent="67.7"/>
+            <lowClouds id="LOW" percent="0.0"/>
+            <mediumClouds id="MEDIUM" percent="0.0"/>
+            <highClouds id="HIGH" percent="67.7"/>
+            <dewpointTemperature id="TD" unit="celsius" value="-0.6"/>
+         </location>
+      </time>
+      <time datatype="forecast" from="2017-12-12T02:00:00Z" to="2017-12-12T03:00:00Z">
+         <location altitude="39" latitude="51.8969" longitude="-8.4863">
+            <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0"/>
+<symbol id="PartlyCloud" number="3"/>
+         </location>
+      </time>
+      <time datatype="forecast" from="2017-12-12T04:00:00Z" to="2017-12-12T04:00:00Z">
+         <location altitude="39" latitude="51.8969" longitude="-8.4863">
+            <temperature id="TTT" unit="celsius" value="1.6"/>
+            <windDirection id="dd" deg="274.9" name="W"/>
+            <windSpeed id="ff" mps="1.7" beaufort="1" name="Flau vind"/>
+            <humidity value="86.8" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1006.3"/>
+            <cloudiness id="NN" percent="100.0"/>
+            <lowClouds id="LOW" percent="0.0"/>
+            <mediumClouds id="MEDIUM" percent="0.0"/>
+            <highClouds id="HIGH" percent="100.0"/>
+            <dewpointTemperature id="TD" unit="celsius" value="-0.5"/>
+         </location>
+      </time>
+      <time datatype="forecast" from="2017-12-12T03:00:00Z" to="2017-12-12T04:00:00Z">
+         <location altitude="39" latitude="51.8969" longitude="-8.4863">
+            <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0"/>
+<symbol id="PartlyCloud" number="3"/>
+         </location>
+      </time>
+      <time datatype="forecast" from="2017-12-12T05:00:00Z" to="2017-12-12T05:00:00Z">
+         <location altitude="39" latitude="51.8969" longitude="-8.4863">
+            <temperature id="TTT" unit="celsius" value="1.8"/>
+            <windDirection id="dd" deg="287.5" name="W"/>
+            <windSpeed id="ff" mps="2.1" beaufort="2" name="Svak vind"/>
+            <humidity value="84.0" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1006.4"/>
+            <cloudiness id="NN" percent="99.7"/>
+            <lowClouds id="LOW" percent="10.3"/>
+            <mediumClouds id="MEDIUM" percent="0.0"/>
+            <highClouds id="HIGH" percent="99.6"/>
+            <dewpointTemperature id="TD" unit="celsius" value="-0.8"/>
+         </location>
+      </time>
+      <time datatype="forecast" from="2017-12-12T04:00:00Z" to="2017-12-12T05:00:00Z">
+         <location altitude="39" latitude="51.8969" longitude="-8.4863">
+            <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0"/>
+<symbol id="PartlyCloud" number="3"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-12T06:00:00Z" to="2017-12-12T06:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="2.7"/>
-            <windDirection id="dd" deg="300.5" name="NW"/>
-            <windSpeed id="ff" mps="2.9" beaufort="2" name="Svak vind"/>
-            <humidity value="83.9" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="1007.7"/>
-            <cloudiness id="NN" percent="93.3"/>
-            <lowClouds id="LOW" percent="0.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="0.1"/>
+            <temperature id="TTT" unit="celsius" value="1.7"/>
+            <windDirection id="dd" deg="297.9" name="NW"/>
+            <windSpeed id="ff" mps="1.7" beaufort="1" name="Flau vind"/>
+            <humidity value="84.9" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1006.6"/>
+            <cloudiness id="NN" percent="100.0"/>
+            <lowClouds id="LOW" percent="16.2"/>
+            <mediumClouds id="MEDIUM" percent="0.0"/>
+            <highClouds id="HIGH" percent="100.0"/>
+            <dewpointTemperature id="TD" unit="celsius" value="-0.8"/>
          </location>
       </time>
-      <time datatype="forecast" from="2017-12-12T00:00:00Z" to="2017-12-12T06:00:00Z">
+      <time datatype="forecast" from="2017-12-12T05:00:00Z" to="2017-12-12T06:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <precipitation unit="mm" value="0.0"/>
+            <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0"/>
+<symbol id="Cloud" number="4"/>
+         </location>
+      </time>
+      <time datatype="forecast" from="2017-12-12T07:00:00Z" to="2017-12-12T07:00:00Z">
+         <location altitude="39" latitude="51.8969" longitude="-8.4863">
+            <temperature id="TTT" unit="celsius" value="2.0"/>
+            <windDirection id="dd" deg="299.2" name="NW"/>
+            <windSpeed id="ff" mps="1.7" beaufort="1" name="Flau vind"/>
+            <humidity value="82.8" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1007.0"/>
+            <cloudiness id="NN" percent="100.0"/>
+            <lowClouds id="LOW" percent="1.9"/>
+            <mediumClouds id="MEDIUM" percent="0.0"/>
+            <highClouds id="HIGH" percent="100.0"/>
+            <dewpointTemperature id="TD" unit="celsius" value="-0.8"/>
+         </location>
+      </time>
+      <time datatype="forecast" from="2017-12-12T06:00:00Z" to="2017-12-12T07:00:00Z">
+         <location altitude="39" latitude="51.8969" longitude="-8.4863">
+            <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0"/>
+<symbol id="PartlyCloud" number="3"/>
+         </location>
+      </time>
+      <time datatype="forecast" from="2017-12-12T08:00:00Z" to="2017-12-12T08:00:00Z">
+         <location altitude="39" latitude="51.8969" longitude="-8.4863">
+            <temperature id="TTT" unit="celsius" value="2.2"/>
+            <windDirection id="dd" deg="304.0" name="NW"/>
+            <windSpeed id="ff" mps="1.5" beaufort="1" name="Flau vind"/>
+            <humidity value="81.5" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1007.1"/>
+            <cloudiness id="NN" percent="100.0"/>
+            <lowClouds id="LOW" percent="0.0"/>
+            <mediumClouds id="MEDIUM" percent="26.7"/>
+            <highClouds id="HIGH" percent="100.0"/>
+            <dewpointTemperature id="TD" unit="celsius" value="-0.8"/>
+         </location>
+      </time>
+      <time datatype="forecast" from="2017-12-12T07:00:00Z" to="2017-12-12T08:00:00Z">
+         <location altitude="39" latitude="51.8969" longitude="-8.4863">
+            <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0"/>
+<symbol id="Cloud" number="4"/>
+         </location>
+      </time>
+      <time datatype="forecast" from="2017-12-12T09:00:00Z" to="2017-12-12T09:00:00Z">
+         <location altitude="39" latitude="51.8969" longitude="-8.4863">
+            <temperature id="TTT" unit="celsius" value="2.5"/>
+            <windDirection id="dd" deg="301.6" name="NW"/>
+            <windSpeed id="ff" mps="1.3" beaufort="1" name="Flau vind"/>
+            <humidity value="80.6" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1007.2"/>
+            <cloudiness id="NN" percent="100.0"/>
+            <lowClouds id="LOW" percent="0.4"/>
+            <mediumClouds id="MEDIUM" percent="97.5"/>
+            <highClouds id="HIGH" percent="100.0"/>
+            <dewpointTemperature id="TD" unit="celsius" value="-0.6"/>
+         </location>
+      </time>
+      <time datatype="forecast" from="2017-12-12T08:00:00Z" to="2017-12-12T09:00:00Z">
+         <location altitude="39" latitude="51.8969" longitude="-8.4863">
+            <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0"/>
+<symbol id="Cloud" number="4"/>
+         </location>
+      </time>
+      <time datatype="forecast" from="2017-12-12T10:00:00Z" to="2017-12-12T10:00:00Z">
+         <location altitude="39" latitude="51.8969" longitude="-8.4863">
+            <temperature id="TTT" unit="celsius" value="3.0"/>
+            <windDirection id="dd" deg="25.7" name="NE"/>
+            <windSpeed id="ff" mps="1.0" beaufort="1" name="Flau vind"/>
+            <humidity value="79.5" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1007.2"/>
+            <cloudiness id="NN" percent="100.0"/>
+            <lowClouds id="LOW" percent="34.8"/>
+            <mediumClouds id="MEDIUM" percent="94.0"/>
+            <highClouds id="HIGH" percent="100.0"/>
+            <dewpointTemperature id="TD" unit="celsius" value="-0.4"/>
+         </location>
+      </time>
+      <time datatype="forecast" from="2017-12-12T09:00:00Z" to="2017-12-12T10:00:00Z">
+         <location altitude="39" latitude="51.8969" longitude="-8.4863">
+            <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0"/>
+<symbol id="Cloud" number="4"/>
+         </location>
+      </time>
+      <time datatype="forecast" from="2017-12-12T11:00:00Z" to="2017-12-12T11:00:00Z">
+         <location altitude="39" latitude="51.8969" longitude="-8.4863">
+            <temperature id="TTT" unit="celsius" value="4.0"/>
+            <windDirection id="dd" deg="171.5" name="S"/>
+            <windSpeed id="ff" mps="0.6" beaufort="1" name="Flau vind"/>
+            <humidity value="77.3" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1007.1"/>
+            <cloudiness id="NN" percent="95.3"/>
+            <lowClouds id="LOW" percent="85.8"/>
+            <mediumClouds id="MEDIUM" percent="63.1"/>
+            <highClouds id="HIGH" percent="0.0"/>
+            <dewpointTemperature id="TD" unit="celsius" value="0.2"/>
+         </location>
+      </time>
+      <time datatype="forecast" from="2017-12-12T10:00:00Z" to="2017-12-12T11:00:00Z">
+         <location altitude="39" latitude="51.8969" longitude="-8.4863">
+            <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0"/>
 <symbol id="Cloud" number="4"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-12T12:00:00Z" to="2017-12-12T12:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="5.3"/>
-            <windDirection id="dd" deg="211.9" name="SW"/>
-            <windSpeed id="ff" mps="2.7" beaufort="2" name="Svak vind"/>
-            <humidity value="80.3" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="1008.6"/>
-            <cloudiness id="NN" percent="91.6"/>
-            <lowClouds id="LOW" percent="0.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="2.1"/>
+            <temperature id="TTT" unit="celsius" value="5.6"/>
+            <windDirection id="dd" deg="216.6" name="SW"/>
+            <windSpeed id="ff" mps="1.2" beaufort="1" name="Flau vind"/>
+            <humidity value="77.5" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1006.5"/>
+            <cloudiness id="NN" percent="99.3"/>
+            <lowClouds id="LOW" percent="88.0"/>
+            <mediumClouds id="MEDIUM" percent="83.5"/>
+            <highClouds id="HIGH" percent="0.0"/>
+            <dewpointTemperature id="TD" unit="celsius" value="1.8"/>
          </location>
       </time>
-      <time datatype="forecast" from="2017-12-12T06:00:00Z" to="2017-12-12T12:00:00Z">
+      <time datatype="forecast" from="2017-12-12T11:00:00Z" to="2017-12-12T12:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <precipitation unit="mm" value="0.0"/>
+            <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.1"/>
 <symbol id="Cloud" number="4"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-12T18:00:00Z" to="2017-12-12T18:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="7.7"/>
-            <windDirection id="dd" deg="210.5" name="SW"/>
-            <windSpeed id="ff" mps="4.3" beaufort="3" name="Lett bris"/>
-            <humidity value="89.9" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="1007.3"/>
-            <cloudiness id="NN" percent="99.0"/>
-            <lowClouds id="LOW" percent="100.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="6.2"/>
+            <temperature id="TTT" unit="celsius" value="8.0"/>
+            <windDirection id="dd" deg="274.7" name="W"/>
+            <windSpeed id="ff" mps="4.1" beaufort="3" name="Lett bris"/>
+            <humidity value="92.9" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1005.3"/>
+            <cloudiness id="NN" percent="99.1"/>
+            <lowClouds id="LOW" percent="99.1"/>
+            <dewpointTemperature id="TD" unit="celsius" value="6.9"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-12T12:00:00Z" to="2017-12-12T18:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <precipitation unit="mm" value="0.5"/>
-<symbol id="Drizzle" number="46"/>
+            <precipitation unit="mm" value="1.0"/>
+<symbol id="LightRain" number="9"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-13T00:00:00Z" to="2017-12-13T00:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="5.9"/>
-            <windDirection id="dd" deg="257.8" name="W"/>
-            <windSpeed id="ff" mps="3.0" beaufort="2" name="Svak vind"/>
-            <humidity value="91.6" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="1007.9"/>
-            <cloudiness id="NN" percent="98.7"/>
-            <lowClouds id="LOW" percent="81.1"/>
-            <dewpointTemperature id="TD" unit="celsius" value="4.5"/>
+            <temperature id="TTT" unit="celsius" value="4.8"/>
+            <windDirection id="dd" deg="258.4" name="W"/>
+            <windSpeed id="ff" mps="2.8" beaufort="2" name="Svak vind"/>
+            <humidity value="93.0" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1006.8"/>
+            <cloudiness id="NN" percent="99.2"/>
+            <lowClouds id="LOW" percent="1.8"/>
+            <dewpointTemperature id="TD" unit="celsius" value="3.7"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-12T18:00:00Z" to="2017-12-13T00:00:00Z">
@@ -1036,68 +962,68 @@
       </time>
       <time datatype="forecast" from="2017-12-13T06:00:00Z" to="2017-12-13T06:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="5.9"/>
-            <windDirection id="dd" deg="228.4" name="SW"/>
-            <windSpeed id="ff" mps="3.3" beaufort="2" name="Svak vind"/>
-            <humidity value="91.7" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="1004.1"/>
-            <cloudiness id="NN" percent="97.2"/>
-            <lowClouds id="LOW" percent="97.2"/>
-            <dewpointTemperature id="TD" unit="celsius" value="4.6"/>
+            <temperature id="TTT" unit="celsius" value="6.3"/>
+            <windDirection id="dd" deg="225.3" name="SW"/>
+            <windSpeed id="ff" mps="3.6" beaufort="2" name="Svak vind"/>
+            <humidity value="90.9" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1002.0"/>
+            <cloudiness id="NN" percent="98.7"/>
+            <lowClouds id="LOW" percent="98.6"/>
+            <dewpointTemperature id="TD" unit="celsius" value="4.8"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-13T00:00:00Z" to="2017-12-13T06:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <precipitation unit="mm" value="1.2"/>
+            <precipitation unit="mm" value="2.1"/>
 <symbol id="LightRain" number="9"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-13T12:00:00Z" to="2017-12-13T12:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="8.8"/>
-            <windDirection id="dd" deg="259.9" name="W"/>
-            <windSpeed id="ff" mps="5.5" beaufort="3" name="Lett bris"/>
-            <humidity value="88.1" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="1000.1"/>
-            <cloudiness id="NN" percent="58.5"/>
-            <lowClouds id="LOW" percent="55.9"/>
-            <dewpointTemperature id="TD" unit="celsius" value="6.9"/>
+            <temperature id="TTT" unit="celsius" value="8.6"/>
+            <windDirection id="dd" deg="268.5" name="W"/>
+            <windSpeed id="ff" mps="4.7" beaufort="3" name="Lett bris"/>
+            <humidity value="90.2" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="997.0"/>
+            <cloudiness id="NN" percent="69.3"/>
+            <lowClouds id="LOW" percent="67.5"/>
+            <dewpointTemperature id="TD" unit="celsius" value="7.1"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-13T06:00:00Z" to="2017-12-13T12:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <precipitation unit="mm" value="0.0"/>
-<symbol id="PartlyCloud" number="3"/>
+            <precipitation unit="mm" value="0.9"/>
+<symbol id="DrizzleSun" number="40"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-13T18:00:00Z" to="2017-12-13T18:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
             <temperature id="TTT" unit="celsius" value="4.7"/>
-            <windDirection id="dd" deg="271.9" name="W"/>
+            <windDirection id="dd" deg="267.4" name="W"/>
             <windSpeed id="ff" mps="6.5" beaufort="4" name="Laber bris"/>
-            <humidity value="77.5" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="1002.1"/>
-            <cloudiness id="NN" percent="75.9"/>
-            <lowClouds id="LOW" percent="26.2"/>
-            <dewpointTemperature id="TD" unit="celsius" value="0.9"/>
+            <humidity value="78.9" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="999.6"/>
+            <cloudiness id="NN" percent="92.9"/>
+            <lowClouds id="LOW" percent="4.2"/>
+            <dewpointTemperature id="TD" unit="celsius" value="1.2"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-13T12:00:00Z" to="2017-12-13T18:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <precipitation unit="mm" value="0.0"/>
-<symbol id="PartlyCloud" number="3"/>
+            <precipitation unit="mm" value="0.5"/>
+<symbol id="Drizzle" number="46"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-14T00:00:00Z" to="2017-12-14T00:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="4.3"/>
-            <windDirection id="dd" deg="262.6" name="W"/>
-            <windSpeed id="ff" mps="5.5" beaufort="3" name="Lett bris"/>
-            <humidity value="70.7" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="1002.3"/>
-            <cloudiness id="NN" percent="50.1"/>
-            <lowClouds id="LOW" percent="6.8"/>
-            <dewpointTemperature id="TD" unit="celsius" value="-0.8"/>
+            <temperature id="TTT" unit="celsius" value="4.1"/>
+            <windDirection id="dd" deg="265.6" name="W"/>
+            <windSpeed id="ff" mps="5.8" beaufort="4" name="Laber bris"/>
+            <humidity value="66.2" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1000.2"/>
+            <cloudiness id="NN" percent="47.7"/>
+            <lowClouds id="LOW" percent="30.1"/>
+            <dewpointTemperature id="TD" unit="celsius" value="-1.8"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-13T18:00:00Z" to="2017-12-14T00:00:00Z">
@@ -1108,14 +1034,14 @@
       </time>
       <time datatype="forecast" from="2017-12-14T06:00:00Z" to="2017-12-14T06:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="3.5"/>
-            <windDirection id="dd" deg="263.6" name="W"/>
-            <windSpeed id="ff" mps="5.5" beaufort="3" name="Lett bris"/>
-            <humidity value="79.5" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="998.2"/>
-            <cloudiness id="NN" percent="59.5"/>
-            <lowClouds id="LOW" percent="22.8"/>
-            <dewpointTemperature id="TD" unit="celsius" value="0.2"/>
+            <temperature id="TTT" unit="celsius" value="3.8"/>
+            <windDirection id="dd" deg="269.6" name="W"/>
+            <windSpeed id="ff" mps="5.9" beaufort="4" name="Laber bris"/>
+            <humidity value="72.6" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="996.8"/>
+            <cloudiness id="NN" percent="54.4"/>
+            <lowClouds id="LOW" percent="22.7"/>
+            <dewpointTemperature id="TD" unit="celsius" value="-0.9"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-14T00:00:00Z" to="2017-12-14T06:00:00Z">
@@ -1126,65 +1052,65 @@
       </time>
       <time datatype="forecast" from="2017-12-14T12:00:00Z" to="2017-12-14T12:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="5.6"/>
-            <windDirection id="dd" deg="267.1" name="W"/>
+            <temperature id="TTT" unit="celsius" value="5.7"/>
+            <windDirection id="dd" deg="265.0" name="W"/>
             <windSpeed id="ff" mps="4.8" beaufort="3" name="Lett bris"/>
-            <humidity value="78.9" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="996.4"/>
-            <cloudiness id="NN" percent="84.8"/>
-            <lowClouds id="LOW" percent="7.9"/>
-            <dewpointTemperature id="TD" unit="celsius" value="2.1"/>
+            <humidity value="78.5" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="995.9"/>
+            <cloudiness id="NN" percent="90.0"/>
+            <lowClouds id="LOW" percent="5.7"/>
+            <dewpointTemperature id="TD" unit="celsius" value="2.2"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-14T06:00:00Z" to="2017-12-14T12:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
             <precipitation unit="mm" value="0.0"/>
-<symbol id="PartlyCloud" number="3"/>
+<symbol id="Cloud" number="4"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-14T18:00:00Z" to="2017-12-14T18:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="5.2"/>
-            <windDirection id="dd" deg="285.1" name="W"/>
-            <windSpeed id="ff" mps="7.4" beaufort="4" name="Laber bris"/>
-            <humidity value="79.4" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="994.8"/>
-            <cloudiness id="NN" percent="77.6"/>
-            <lowClouds id="LOW" percent="31.1"/>
-            <dewpointTemperature id="TD" unit="celsius" value="1.8"/>
+            <temperature id="TTT" unit="celsius" value="5.6"/>
+            <windDirection id="dd" deg="261.8" name="W"/>
+            <windSpeed id="ff" mps="6.5" beaufort="4" name="Laber bris"/>
+            <humidity value="79.1" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="992.1"/>
+            <cloudiness id="NN" percent="93.5"/>
+            <lowClouds id="LOW" percent="45.8"/>
+            <dewpointTemperature id="TD" unit="celsius" value="2.1"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-14T12:00:00Z" to="2017-12-14T18:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
             <precipitation unit="mm" value="0.0"/>
-<symbol id="PartlyCloud" number="3"/>
+<symbol id="Cloud" number="4"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-15T00:00:00Z" to="2017-12-15T00:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="5.6"/>
-            <windDirection id="dd" deg="303.8" name="NW"/>
-            <windSpeed id="ff" mps="8.3" beaufort="4" name="Laber bris"/>
-            <humidity value="76.4" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="996.3"/>
-            <cloudiness id="NN" percent="31.9"/>
-            <lowClouds id="LOW" percent="30.7"/>
-            <dewpointTemperature id="TD" unit="celsius" value="1.7"/>
+            <temperature id="TTT" unit="celsius" value="5.2"/>
+            <windDirection id="dd" deg="321.2" name="NW"/>
+            <windSpeed id="ff" mps="7.9" beaufort="4" name="Laber bris"/>
+            <humidity value="82.2" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="994.6"/>
+            <cloudiness id="NN" percent="63.8"/>
+            <lowClouds id="LOW" percent="64.5"/>
+            <dewpointTemperature id="TD" unit="celsius" value="2.3"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-14T18:00:00Z" to="2017-12-15T00:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
             <precipitation unit="mm" value="0.0"/>
-<symbol id="LightCloud" number="2"/>
+<symbol id="PartlyCloud" number="3"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-15T06:00:00Z" to="2017-12-15T06:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="3.5"/>
-            <windDirection id="dd" deg="343.2" name="N"/>
+            <temperature id="TTT" unit="celsius" value="3.4"/>
+            <windDirection id="dd" deg="336.9" name="NW"/>
             <windSpeed id="ff" mps="6.3" beaufort="4" name="Laber bris"/>
-            <humidity value="81.0" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="1004.6"/>
+            <humidity value="81.6" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1005.3"/>
             <cloudiness id="NN" percent="0.0"/>
             <lowClouds id="LOW" percent="0.0"/>
             <dewpointTemperature id="TD" unit="celsius" value="0.4"/>
@@ -1198,13 +1124,13 @@
       </time>
       <time datatype="forecast" from="2017-12-15T12:00:00Z" to="2017-12-15T12:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="7.2"/>
-            <windDirection id="dd" deg="303.1" name="NW"/>
-            <windSpeed id="ff" mps="3.4" beaufort="2" name="Svak vind"/>
-            <humidity value="72.1" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="1011.4"/>
-            <cloudiness id="NN" percent="0.4"/>
-            <lowClouds id="LOW" percent="0.4"/>
+            <temperature id="TTT" unit="celsius" value="7.8"/>
+            <windDirection id="dd" deg="327.5" name="NW"/>
+            <windSpeed id="ff" mps="4.3" beaufort="3" name="Lett bris"/>
+            <humidity value="69.0" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1012.4"/>
+            <cloudiness id="NN" percent="0.0"/>
+            <lowClouds id="LOW" percent="0.0"/>
             <dewpointTemperature id="TD" unit="celsius" value="2.4"/>
          </location>
       </time>
@@ -1216,67 +1142,67 @@
       </time>
       <time datatype="forecast" from="2017-12-15T18:00:00Z" to="2017-12-15T18:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="5.0"/>
-            <windDirection id="dd" deg="326.9" name="NW"/>
-            <windSpeed id="ff" mps="4.1" beaufort="3" name="Lett bris"/>
-            <humidity value="83.1" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="1016.3"/>
-            <cloudiness id="NN" percent="10.4"/>
-            <lowClouds id="LOW" percent="7.6"/>
-            <dewpointTemperature id="TD" unit="celsius" value="2.2"/>
+            <temperature id="TTT" unit="celsius" value="5.2"/>
+            <windDirection id="dd" deg="330.9" name="NW"/>
+            <windSpeed id="ff" mps="4.2" beaufort="3" name="Lett bris"/>
+            <humidity value="79.9" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1017.8"/>
+            <cloudiness id="NN" percent="44.7"/>
+            <lowClouds id="LOW" percent="45.1"/>
+            <dewpointTemperature id="TD" unit="celsius" value="1.9"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-15T12:00:00Z" to="2017-12-15T18:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
             <precipitation unit="mm" value="0.0"/>
-<symbol id="Sun" number="1"/>
+<symbol id="PartlyCloud" number="3"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-16T00:00:00Z" to="2017-12-16T00:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="2.1"/>
-            <windDirection id="dd" deg="312.9" name="NW"/>
-            <windSpeed id="ff" mps="3.2" beaufort="2" name="Svak vind"/>
-            <humidity value="91.8" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="1019.9"/>
-            <cloudiness id="NN" percent="2.2"/>
-            <lowClouds id="LOW" percent="2.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="0.8"/>
+            <temperature id="TTT" unit="celsius" value="2.6"/>
+            <windDirection id="dd" deg="325.6" name="NW"/>
+            <windSpeed id="ff" mps="3.3" beaufort="2" name="Svak vind"/>
+            <humidity value="88.3" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1022.4"/>
+            <cloudiness id="NN" percent="13.5"/>
+            <lowClouds id="LOW" percent="0.3"/>
+            <dewpointTemperature id="TD" unit="celsius" value="0.7"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-15T18:00:00Z" to="2017-12-16T00:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
             <precipitation unit="mm" value="0.0"/>
-<symbol id="Sun" number="1"/>
+<symbol id="LightCloud" number="2"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-16T06:00:00Z" to="2017-12-16T06:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="1.6"/>
-            <windDirection id="dd" deg="298.5" name="NW"/>
-            <windSpeed id="ff" mps="3.1" beaufort="2" name="Svak vind"/>
-            <humidity value="90.3" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="1020.9"/>
-            <cloudiness id="NN" percent="10.5"/>
-            <lowClouds id="LOW" percent="6.4"/>
-            <dewpointTemperature id="TD" unit="celsius" value="0.0"/>
+            <temperature id="TTT" unit="celsius" value="1.9"/>
+            <windDirection id="dd" deg="292.0" name="W"/>
+            <windSpeed id="ff" mps="2.2" beaufort="2" name="Svak vind"/>
+            <humidity value="87.2" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1024.4"/>
+            <cloudiness id="NN" percent="63.0"/>
+            <lowClouds id="LOW" percent="0.6"/>
+            <dewpointTemperature id="TD" unit="celsius" value="-0.2"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-16T00:00:00Z" to="2017-12-16T06:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
             <precipitation unit="mm" value="0.0"/>
-<symbol id="Sun" number="1"/>
+<symbol id="PartlyCloud" number="3"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-16T12:00:00Z" to="2017-12-16T12:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
             <temperature id="TTT" unit="celsius" value="6.5"/>
-            <windDirection id="dd" deg="285.6" name="W"/>
-            <windSpeed id="ff" mps="3.4" beaufort="2" name="Svak vind"/>
-            <humidity value="75.5" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="1021.5"/>
-            <cloudiness id="NN" percent="66.1"/>
-            <lowClouds id="LOW" percent="54.5"/>
+            <windDirection id="dd" deg="250.4" name="W"/>
+            <windSpeed id="ff" mps="2.6" beaufort="2" name="Svak vind"/>
+            <humidity value="75.1" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1025.7"/>
+            <cloudiness id="NN" percent="82.5"/>
+            <lowClouds id="LOW" percent="59.3"/>
             <dewpointTemperature id="TD" unit="celsius" value="2.3"/>
          </location>
       </time>
@@ -1288,218 +1214,254 @@
       </time>
       <time datatype="forecast" from="2017-12-16T18:00:00Z" to="2017-12-16T18:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="5.0"/>
-            <windDirection id="dd" deg="259.9" name="W"/>
+            <temperature id="TTT" unit="celsius" value="4.3"/>
+            <windDirection id="dd" deg="236.0" name="SW"/>
             <windSpeed id="ff" mps="2.5" beaufort="2" name="Svak vind"/>
-            <humidity value="88.5" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="1021.2"/>
-            <cloudiness id="NN" percent="98.8"/>
-            <lowClouds id="LOW" percent="98.6"/>
-            <dewpointTemperature id="TD" unit="celsius" value="3.2"/>
+            <humidity value="91.3" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1025.6"/>
+            <cloudiness id="NN" percent="80.8"/>
+            <lowClouds id="LOW" percent="14.6"/>
+            <dewpointTemperature id="TD" unit="celsius" value="2.9"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-16T12:00:00Z" to="2017-12-16T18:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
             <precipitation unit="mm" value="0.0"/>
-<symbol id="Cloud" number="4"/>
+<symbol id="PartlyCloud" number="3"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-17T00:00:00Z" to="2017-12-17T00:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="5.0"/>
-            <windDirection id="dd" deg="226.9" name="SW"/>
-            <windSpeed id="ff" mps="1.9" beaufort="1" name="Flau vind"/>
-            <humidity value="94.4" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="1019.4"/>
-            <cloudiness id="NN" percent="98.7"/>
-            <lowClouds id="LOW" percent="98.2"/>
-            <dewpointTemperature id="TD" unit="celsius" value="4.1"/>
+            <temperature id="TTT" unit="celsius" value="6.0"/>
+            <windDirection id="dd" deg="210.7" name="SW"/>
+            <windSpeed id="ff" mps="3.0" beaufort="2" name="Svak vind"/>
+            <humidity value="92.9" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1025.1"/>
+            <cloudiness id="NN" percent="98.0"/>
+            <lowClouds id="LOW" percent="10.7"/>
+            <dewpointTemperature id="TD" unit="celsius" value="4.9"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-16T18:00:00Z" to="2017-12-17T00:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <precipitation unit="mm" value="0.9"/>
-<symbol id="Drizzle" number="46"/>
+            <precipitation unit="mm" value="0.0"/>
+<symbol id="Cloud" number="4"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-17T06:00:00Z" to="2017-12-17T06:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="7.7"/>
-            <windDirection id="dd" deg="315.6" name="NW"/>
-            <windSpeed id="ff" mps="6.5" beaufort="4" name="Laber bris"/>
+            <temperature id="TTT" unit="celsius" value="7.9"/>
+            <windDirection id="dd" deg="210.4" name="SW"/>
+            <windSpeed id="ff" mps="3.8" beaufort="3" name="Lett bris"/>
             <humidity value="87.5" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="1015.8"/>
-            <cloudiness id="NN" percent="42.7"/>
-            <lowClouds id="LOW" percent="26.6"/>
-            <dewpointTemperature id="TD" unit="celsius" value="5.7"/>
+            <pressure id="pr" unit="hPa" value="1023.5"/>
+            <cloudiness id="NN" percent="98.7"/>
+            <lowClouds id="LOW" percent="5.9"/>
+            <dewpointTemperature id="TD" unit="celsius" value="5.9"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-17T00:00:00Z" to="2017-12-17T06:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <precipitation unit="mm" value="0.6"/>
-<symbol id="DrizzleSun" number="40"/>
+            <precipitation unit="mm" value="0.0"/>
+<symbol id="Cloud" number="4"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-17T12:00:00Z" to="2017-12-17T12:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="7.9"/>
-            <windDirection id="dd" deg="320.4" name="NW"/>
-            <windSpeed id="ff" mps="7.3" beaufort="4" name="Laber bris"/>
-            <humidity value="71.7" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="1018.3"/>
-            <cloudiness id="NN" percent="41.2"/>
-            <lowClouds id="LOW" percent="14.5"/>
-            <dewpointTemperature id="TD" unit="celsius" value="3.0"/>
+            <temperature id="TTT" unit="celsius" value="10.1"/>
+            <windDirection id="dd" deg="201.3" name="S"/>
+            <windSpeed id="ff" mps="4.7" beaufort="3" name="Lett bris"/>
+            <humidity value="89.2" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1023.0"/>
+            <cloudiness id="NN" percent="98.9"/>
+            <lowClouds id="LOW" percent="100.0"/>
+            <dewpointTemperature id="TD" unit="celsius" value="8.4"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-17T06:00:00Z" to="2017-12-17T12:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
             <precipitation unit="mm" value="0.0"/>
-<symbol id="PartlyCloud" number="3"/>
+<symbol id="Cloud" number="4"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-17T18:00:00Z" to="2017-12-17T18:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="5.9"/>
-            <windDirection id="dd" deg="328.5" name="NW"/>
-            <windSpeed id="ff" mps="5.6" beaufort="3" name="Lett bris"/>
-            <humidity value="68.7" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="1021.2"/>
-            <cloudiness id="NN" percent="34.7"/>
-            <lowClouds id="LOW" percent="0.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="0.4"/>
+            <temperature id="TTT" unit="celsius" value="10.7"/>
+            <windDirection id="dd" deg="203.5" name="SW"/>
+            <windSpeed id="ff" mps="5.3" beaufort="3" name="Lett bris"/>
+            <humidity value="95.2" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1021.7"/>
+            <cloudiness id="NN" percent="99.1"/>
+            <lowClouds id="LOW" percent="100.0"/>
+            <dewpointTemperature id="TD" unit="celsius" value="10.0"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-17T12:00:00Z" to="2017-12-17T18:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
             <precipitation unit="mm" value="0.0"/>
-<symbol id="LightCloud" number="2"/>
+<symbol id="Cloud" number="4"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-18T00:00:00Z" to="2017-12-18T00:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="3.6"/>
-            <windDirection id="dd" deg="327.9" name="NW"/>
-            <windSpeed id="ff" mps="3.6" beaufort="3" name="Lett bris"/>
-            <humidity value="82.4" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="1024.3"/>
-            <cloudiness id="NN" percent="21.6"/>
-            <lowClouds id="LOW" percent="2.5"/>
-            <dewpointTemperature id="TD" unit="celsius" value="0.8"/>
+            <temperature id="TTT" unit="celsius" value="11.3"/>
+            <windDirection id="dd" deg="206.5" name="SW"/>
+            <windSpeed id="ff" mps="5.1" beaufort="3" name="Lett bris"/>
+            <humidity value="98.0" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1020.6"/>
+            <cloudiness id="NN" percent="99.0"/>
+            <lowClouds id="LOW" percent="100.0"/>
+            <dewpointTemperature id="TD" unit="celsius" value="11.1"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-17T18:00:00Z" to="2017-12-18T00:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
             <precipitation unit="mm" value="0.0"/>
-<symbol id="LightCloud" number="2"/>
+<symbol id="Cloud" number="4"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-18T06:00:00Z" to="2017-12-18T06:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="0.9"/>
-            <windDirection id="dd" deg="312.9" name="NW"/>
-            <windSpeed id="ff" mps="1.6" beaufort="1" name="Flau vind"/>
-            <humidity value="89.2" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="1024.2"/>
-            <cloudiness id="NN" percent="46.7"/>
-            <lowClouds id="LOW" percent="0.8"/>
-            <dewpointTemperature id="TD" unit="celsius" value="-0.8"/>
+            <temperature id="TTT" unit="celsius" value="11.7"/>
+            <windDirection id="dd" deg="204.5" name="SW"/>
+            <windSpeed id="ff" mps="6.5" beaufort="4" name="Laber bris"/>
+            <humidity value="93.9" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1018.7"/>
+            <cloudiness id="NN" percent="99.0"/>
+            <lowClouds id="LOW" percent="100.0"/>
+            <dewpointTemperature id="TD" unit="celsius" value="10.8"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-18T00:00:00Z" to="2017-12-18T06:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
             <precipitation unit="mm" value="0.0"/>
-<symbol id="PartlyCloud" number="3"/>
+<symbol id="Cloud" number="4"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-18T12:00:00Z" to="2017-12-18T12:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="5.5"/>
-            <windDirection id="dd" deg="169.7" name="S"/>
-            <windSpeed id="ff" mps="2.3" beaufort="2" name="Svak vind"/>
-            <humidity value="78.0" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="1022.8"/>
-            <cloudiness id="NN" percent="95.7"/>
-            <lowClouds id="LOW" percent="10.5"/>
-            <dewpointTemperature id="TD" unit="celsius" value="1.8"/>
+            <temperature id="TTT" unit="celsius" value="12.0"/>
+            <windDirection id="dd" deg="204.7" name="SW"/>
+            <windSpeed id="ff" mps="7.2" beaufort="4" name="Laber bris"/>
+            <humidity value="93.3" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1018.1"/>
+            <cloudiness id="NN" percent="99.1"/>
+            <lowClouds id="LOW" percent="100.0"/>
+            <dewpointTemperature id="TD" unit="celsius" value="11.0"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-18T06:00:00Z" to="2017-12-18T12:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <precipitation unit="mm" value="0.0"/>
-<symbol id="Cloud" number="4"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-18T18:00:00Z" to="2017-12-18T18:00:00Z">
-         <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="8.1"/>
-            <windDirection id="dd" deg="187.7" name="S"/>
-            <windSpeed id="ff" mps="4.5" beaufort="3" name="Lett bris"/>
-            <humidity value="87.5" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="1017.6"/>
-            <cloudiness id="NN" percent="98.8"/>
-            <lowClouds id="LOW" percent="100.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="6.1"/>
-         </location>
-      </time>
-      <time datatype="forecast" from="2017-12-18T12:00:00Z" to="2017-12-18T18:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
             <precipitation unit="mm" value="0.8"/>
 <symbol id="Drizzle" number="46"/>
          </location>
       </time>
+      <time datatype="forecast" from="2017-12-18T18:00:00Z" to="2017-12-18T18:00:00Z">
+         <location altitude="39" latitude="51.8969" longitude="-8.4863">
+            <temperature id="TTT" unit="celsius" value="12.0"/>
+            <windDirection id="dd" deg="203.2" name="SW"/>
+            <windSpeed id="ff" mps="6.9" beaufort="4" name="Laber bris"/>
+            <humidity value="95.5" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1015.2"/>
+            <cloudiness id="NN" percent="99.1"/>
+            <lowClouds id="LOW" percent="100.0"/>
+            <dewpointTemperature id="TD" unit="celsius" value="11.4"/>
+         </location>
+      </time>
+      <time datatype="forecast" from="2017-12-18T12:00:00Z" to="2017-12-18T18:00:00Z">
+         <location altitude="39" latitude="51.8969" longitude="-8.4863">
+            <precipitation unit="mm" value="0.0"/>
+<symbol id="Cloud" number="4"/>
+         </location>
+      </time>
       <time datatype="forecast" from="2017-12-19T00:00:00Z" to="2017-12-19T00:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="6.5"/>
-            <windDirection id="dd" deg="310.3" name="NW"/>
-            <windSpeed id="ff" mps="4.2" beaufort="3" name="Lett bris"/>
-            <humidity value="91.0" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="1018.5"/>
-            <cloudiness id="NN" percent="19.6"/>
-            <lowClouds id="LOW" percent="18.7"/>
-            <dewpointTemperature id="TD" unit="celsius" value="5.1"/>
+            <temperature id="TTT" unit="celsius" value="12.2"/>
+            <windDirection id="dd" deg="207.5" name="SW"/>
+            <windSpeed id="ff" mps="8.0" beaufort="4" name="Laber bris"/>
+            <humidity value="96.8" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1012.2"/>
+            <cloudiness id="NN" percent="99.0"/>
+            <lowClouds id="LOW" percent="100.0"/>
+            <dewpointTemperature id="TD" unit="celsius" value="11.8"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-18T18:00:00Z" to="2017-12-19T00:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <precipitation unit="mm" value="1.3"/>
-<symbol id="LightRainSun" number="5"/>
+            <precipitation unit="mm" value="2.2"/>
+<symbol id="LightRain" number="9"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-19T06:00:00Z" to="2017-12-19T06:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="4.5"/>
-            <windDirection id="dd" deg="299.3" name="NW"/>
+            <temperature id="TTT" unit="celsius" value="8.7"/>
+            <windDirection id="dd" deg="298.0" name="NW"/>
             <windSpeed id="ff" mps="4.1" beaufort="3" name="Lett bris"/>
-            <humidity value="85.0" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="1020.6"/>
-            <cloudiness id="NN" percent="6.4"/>
-            <lowClouds id="LOW" percent="6.4"/>
-            <dewpointTemperature id="TD" unit="celsius" value="2.1"/>
+            <humidity value="87.4" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1014.9"/>
+            <cloudiness id="NN" percent="38.1"/>
+            <lowClouds id="LOW" percent="18.9"/>
+            <dewpointTemperature id="TD" unit="celsius" value="6.7"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-19T00:00:00Z" to="2017-12-19T06:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <precipitation unit="mm" value="0.0"/>
-<symbol id="Sun" number="1"/>
+            <precipitation unit="mm" value="6.0"/>
+<symbol id="RainSun" number="41"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-19T12:00:00Z" to="2017-12-19T12:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
-            <temperature id="TTT" unit="celsius" value="6.9"/>
-            <windDirection id="dd" deg="287.5" name="W"/>
-            <windSpeed id="ff" mps="3.2" beaufort="2" name="Svak vind"/>
-            <humidity value="80.7" unit="percent"/>
-            <pressure id="pr" unit="hPa" value="1022.7"/>
-            <cloudiness id="NN" percent="35.0"/>
-            <lowClouds id="LOW" percent="22.0"/>
-            <dewpointTemperature id="TD" unit="celsius" value="3.8"/>
+            <temperature id="TTT" unit="celsius" value="7.6"/>
+            <windDirection id="dd" deg="270.1" name="W"/>
+            <windSpeed id="ff" mps="3.4" beaufort="2" name="Svak vind"/>
+            <humidity value="74.4" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1020.2"/>
+            <cloudiness id="NN" percent="1.8"/>
+            <lowClouds id="LOW" percent="1.8"/>
+            <dewpointTemperature id="TD" unit="celsius" value="3.2"/>
          </location>
       </time>
       <time datatype="forecast" from="2017-12-19T06:00:00Z" to="2017-12-19T12:00:00Z">
          <location altitude="39" latitude="51.8969" longitude="-8.4863">
             <precipitation unit="mm" value="0.0"/>
-<symbol id="LightCloud" number="2"/>
+<symbol id="Sun" number="1"/>
+         </location>
+      </time>
+      <time datatype="forecast" from="2017-12-19T18:00:00Z" to="2017-12-19T18:00:00Z">
+         <location altitude="39" latitude="51.8969" longitude="-8.4863">
+            <temperature id="TTT" unit="celsius" value="5.0"/>
+            <windDirection id="dd" deg="275.7" name="W"/>
+            <windSpeed id="ff" mps="4.3" beaufort="3" name="Lett bris"/>
+            <humidity value="75.9" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1022.6"/>
+            <cloudiness id="NN" percent="56.3"/>
+            <lowClouds id="LOW" percent="32.5"/>
+            <dewpointTemperature id="TD" unit="celsius" value="1.0"/>
+         </location>
+      </time>
+      <time datatype="forecast" from="2017-12-19T12:00:00Z" to="2017-12-19T18:00:00Z">
+         <location altitude="39" latitude="51.8969" longitude="-8.4863">
+            <precipitation unit="mm" value="0.0"/>
+<symbol id="PartlyCloud" number="3"/>
+         </location>
+      </time>
+      <time datatype="forecast" from="2017-12-20T00:00:00Z" to="2017-12-20T00:00:00Z">
+         <location altitude="39" latitude="51.8969" longitude="-8.4863">
+            <temperature id="TTT" unit="celsius" value="4.1"/>
+            <windDirection id="dd" deg="292.2" name="W"/>
+            <windSpeed id="ff" mps="4.0" beaufort="3" name="Lett bris"/>
+            <humidity value="80.5" unit="percent"/>
+            <pressure id="pr" unit="hPa" value="1026.7"/>
+            <cloudiness id="NN" percent="68.6"/>
+            <lowClouds id="LOW" percent="0.0"/>
+            <dewpointTemperature id="TD" unit="celsius" value="1.0"/>
+         </location>
+      </time>
+      <time datatype="forecast" from="2017-12-19T18:00:00Z" to="2017-12-20T00:00:00Z">
+         <location altitude="39" latitude="51.8969" longitude="-8.4863">
+            <precipitation unit="mm" value="0.0"/>
+<symbol id="PartlyCloud" number="3"/>
          </location>
       </time>
    </product>
