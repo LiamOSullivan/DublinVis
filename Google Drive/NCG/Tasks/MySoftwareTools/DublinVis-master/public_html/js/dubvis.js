@@ -94,7 +94,7 @@ function  setup() {
 
     let count = 0;
 
-    for (let i = 0; i < 10; i += 2) {
+    for (let i = 0; i < 24; i += 2) {
         //There are 2 types of forecast data;
         //harmonie at a given time or ec_test_l  spanning an hour 
 
@@ -180,6 +180,11 @@ function  setup() {
         println("Get symbol: " + forecasts[i].symbol + forecasts[i].tod + ".png");
         document.getElementById("weatherImage" + i).innerHTML =
                 "<img src=\"" + "public_html/images/Met50v2/" + forecasts[i].symbol + forecasts[i].tod + ".png" + "\"></img>";
+        document.getElementById("weatherHead" + i).innerHTML =
+                forecasts[i].time;
+        document.getElementById("tableTemp" + i).innerHTML =
+                forecasts[i].t;
+    
     }
 
 //    if (sourceData != null) {
